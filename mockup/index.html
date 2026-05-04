@@ -288,16 +288,22 @@
 
   /* ============ CLIENT LOGO WALL ============ */
   .client-logo {
-    height: 56px;
+    height: 64px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 12px;
-    border: 1px solid rgba(255,255,255,0.08);
-    background: rgba(255,255,255,0.02);
+    padding: 0 8px;
+    border: 1px solid rgba(255,255,255,0.10);
+    background: rgba(255,255,255,0.025);
     transition: all 200ms ease;
-    filter: grayscale(100%) opacity(0.65);
+    filter: grayscale(100%) opacity(0.7);
     position: relative;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  @media (min-width: 640px) {
+    .client-logo { height: 56px; padding: 0 12px; }
   }
   .client-logo:hover { filter: grayscale(0%) opacity(1); border-color: rgba(91,165,201,0.4); }
   .client-logo .auth-tag {
@@ -308,16 +314,28 @@
     font-weight: 700;
     font-family: monospace;
   }
-  /* NVIDIA-style wordmark (placeholder, NOT actual NVIDIA logo) */
-  .lg-nvidia { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 18px; letter-spacing: 0.05em; color: #76B900; text-transform: uppercase; }
-  /* Costco-style */
-  .lg-costco { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 18px; color: #E31837; letter-spacing: 0.02em; }
+  /* All 4 wordmarks share base typography for consistent visual mass */
+  .lg-nvidia, .lg-costco, .lg-blossom, .lg-ocm {
+    font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 16px;
+    line-height: 1; letter-spacing: 0.04em; text-transform: uppercase;
+  }
+  @media (min-width: 640px) {
+    .lg-nvidia, .lg-costco, .lg-blossom, .lg-ocm { font-size: 17px; }
+  }
+  /* Brand color accents */
+  .lg-nvidia { color: #76B900; letter-spacing: 0.05em; }
+  .lg-costco { color: #E31837; letter-spacing: 0.02em; }
   .lg-costco span { color: #005DAA; }
-  /* Blossom Hotel-style */
-  .lg-blossom { font-family: 'Manrope', sans-serif; font-weight: 700; font-size: 14px; color: #C9A66B; letter-spacing: 0.18em; text-transform: uppercase; }
-  /* OCM-style */
-  .lg-ocm { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 18px; color: #ffffff; letter-spacing: 0.04em; }
-  .lg-ocm span { color: #5BA5C9; }
+  .lg-blossom { color: #C9A66B; font-size: 13px; letter-spacing: 0.14em; }
+  @media (min-width: 640px) {
+    .lg-blossom { font-size: 14px; letter-spacing: 0.18em; }
+  }
+  .lg-ocm { color: #ffffff; letter-spacing: 0.04em; }
+  .lg-ocm > .ocm-suffix { color: #5BA5C9; }
+  /* Hide "· MUSHROOM" suffix on narrow mobile to keep cells aligned */
+  @media (max-width: 380px) {
+    .lg-ocm > .ocm-suffix { display: none; }
+  }
 </style>
 </head>
 <body class="antialiased">
@@ -470,10 +488,10 @@
           <span class="lg-costco">CO<span>STCO</span></span>
         </div>
         <div class="client-logo">
-          <span class="lg-blossom">Blossom Hotel</span>
+          <span class="lg-blossom">BLOSSOM</span>
         </div>
         <div class="client-logo">
-          <span class="lg-ocm">OCM<span> · MUSHROOM</span></span>
+          <span class="lg-ocm">OCM<span class="ocm-suffix"> · MUSHROOM</span></span>
         </div>
       </div>
     </div>
