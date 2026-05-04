@@ -68,7 +68,7 @@ def build_services():
             "Compressor racks &amp; mechanical equipment rooms",
             "Blast freezing &amp; flash chill applications",
             "Temperature mapping &amp; commissioning",
-            "Energy-recovery integration",
+            "Energy recovery (heat reclaim, condenser water, desuperheater integration)",
          ],
          "OCM Mushroom Cold Storage · Texas",
          "Industrial cold-storage facility refrigeration: walk-ins, piping, insulation and full system commissioning.",
@@ -95,7 +95,7 @@ def build_services():
          [
             "Domestic hot &amp; cold water distribution",
             "Sanitary &amp; storm drainage",
-            "Backflow prevention &amp; water treatment",
+            "Backflow prevention (BPAT-certified testing) &amp; water treatment",
             "Process plumbing for industrial &amp; food-grade",
             "Medical / lab gas (where applicable)",
             "Fixture trim &amp; final connections",
@@ -163,7 +163,7 @@ def build_services():
 </section>
 """
 
-    body += cta_band() + footer() + schema_local_business()
+    body += cta_band() + footer()
     write("services.html", body)
 
 
@@ -262,7 +262,7 @@ def build_projects():
 </section>
 """
 
-    body += cta_band() + footer() + schema_local_business()
+    body += cta_band() + footer()
     write("projects.html", body)
 
 
@@ -301,7 +301,7 @@ def build_company():
           Oak Shield was built to close those seams. We self-perform all four MEP disciplines under one estimating desk, one project manager, and one safety program. GCs get fewer subs to manage, owners get one warranty contact, and inspectors get one coordination story instead of four.
         </p>
         <p>
-          We&rsquo;re Texas-based and Texas-licensed. We work where our crews can drive home — Houston, Dallas, Austin, San Antonio, and the build corridors connecting them. We don&rsquo;t fly mark-ups in.
+          We&rsquo;re Texas-based and Texas-licensed. We work where our crews can drive home — Houston, Dallas, Austin, San Antonio, and the I-10 / I-35 / I-45 build corridors connecting them. No travel mark-ups, no per-diem hidden in the bid sheet.
         </p>
       </div>
     </div>
@@ -345,7 +345,7 @@ def build_company():
       <div class="ink2-bg p-7"><div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">Bonding</div><div class="text-2xl font-extrabold mb-1">Surety-backed</div><div class="text-xs text-white/55">Single &amp; aggregate capacity on request</div></div>
       <div class="ink2-bg p-7"><div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">Prequalification</div><div class="text-2xl font-extrabold mb-1">Ready</div><div class="text-xs text-white/55">ISNetworld &middot; Avetta &middot; Veriforce capable</div></div>
     </div>
-    <p class="mt-5 text-xs text-white/40 leading-relaxed">Specific license numbers, insurance limits, bonding capacity, EMR, and safety program documents provided as part of prequalification submission. Request via the Capability Statement.</p>
+    <p class="mt-5 text-xs text-white/40 leading-relaxed">Full prequalification package — license numbers, COI, EMR detail, bonding capacity, safety program, and project references — available via the Capability Statement (instant) or Prequalification Package (within 1 business day).</p>
 
     <div class="mt-10 ink2-bg border border-line p-7 lg:p-8 grid lg:grid-cols-12 gap-6 items-center">
       <div class="lg:col-span-8">
@@ -364,7 +364,7 @@ def build_company():
 </section>
 """
 
-    body += cta_band() + footer() + schema_local_business()
+    body += cta_band() + footer()
     write("company.html", body)
 
 
@@ -574,13 +574,13 @@ def build_contact():
     <div class="ink2-bg p-7">
       <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-3">Crew Coverage</div>
       <div class="text-base font-bold mb-2">Texas Statewide</div>
-      <p class="text-sm text-white/55">Houston · Dallas · Austin · San Antonio &amp; build corridors between. No travel mark-up surprises.</p>
+      <p class="text-sm text-white/55">Houston (HQ) · Dallas/Fort Worth · Austin · San Antonio + I-10, I-35, I-45 corridors. For projects outside these markets, ask us about partnered execution.</p>
     </div>
   </div>
 </section>
 """
 
-    body += footer() + schema_local_business()
+    body += footer()
     write("contact.html", body)
 
 
@@ -618,7 +618,7 @@ def build_market_page(slug: str, market_name: str, hero_image: str, hero_alt: st
     <div class="max-w-3xl">
       <div class="flex items-center gap-3 mb-5">
         <span class="chip safety-bg text-white">Market · {market_name}</span>
-        <span class="chip border border-white/20 text-white/70">Texas Statewide</span>
+        <span class="chip border border-white/20 text-white/70">Houston · DFW · Austin · SA</span>
       </div>
       <h1 class="display text-4xl lg:text-6xl font-extrabold leading-[1.04]">{title_h1}</h1>
       <p class="mt-6 text-base lg:text-lg text-white/75 leading-relaxed max-w-2xl">{hero_subtitle}</p>
@@ -711,7 +711,7 @@ def build_market_page(slug: str, market_name: str, hero_image: str, hero_alt: st
     import json
     body += f'\n<script type="application/ld+json">{json.dumps(faq_schema, indent=2)}</script>\n'
 
-    body += cta_band(base="../") + footer(base="../") + schema_local_business()
+    body += cta_band(base="../") + footer(base="../")
     write(f"markets/{slug}.html", body)
 
 
@@ -825,7 +825,7 @@ def build_hospitality():
             ("Can you keep schedule with a stabilized hotel opening date?",
              "Yes. Hospitality schedules can't slip without missing reservation windows. We sequence MEP to inspectors and to final guest-room punch — not to ourselves. We pre-fab plumbing risers and electrical assemblies where it compresses schedule."),
             ("What hotel verticals are within your scope?",
-             "Full-service, select-service, extended-stay, boutique / lifestyle, resort / convention and hotel renovation / re-flag. Our Blossom Hotel build was full-service development; we scale crews to project format."),
+             "Full-service hotels (our Blossom Hotel template), select-service, extended-stay, and renovation / re-flag. Other formats — boutique, resort, convention — through our hospitality experience and partner network. Scope to your project format."),
             ("Where in Texas do you support hotel builds?",
              "Statewide — Houston, Dallas, Austin, San Antonio and the I-35 / I-10 corridors where hotel development activity is concentrated."),
             ("Do you handle kitchen and laundry equipment connections?",
@@ -1002,7 +1002,7 @@ def build_industrial():
             ("Do you self-perform all four MEP trades on industrial sites?",
              "Yes. Industrial owners specifically benefit from a single point of accountability across mechanical, electrical, plumbing and refrigeration — fewer contracts to manage, fewer warranty contacts, faster commissioning."),
             ("What industrial verticals are in scope?",
-             "Food &amp; beverage, battery / EV, aerospace, oil &amp; gas downstream, chemical / petrochem, plastics, pharma, semiconductor support, automotive and industrial commissary / laundry. Tell us your vertical and we&rsquo;ll map a fit."),
+             "Demonstrated capabilities: food &amp; beverage processing, industrial cold storage. Approached through our 4-trade self-perform model: battery / EV facilities, manufacturing retrofit, plastics, pharma support facilities. Tell us your vertical and we&rsquo;ll map fit honestly — including referring you elsewhere if it&rsquo;s outside our core capability."),
             ("Can you handle process piping and high-amp electrical at the same site?",
              "Yes. That combination is common on manufacturing and process work — we self-perform the process piping and the electrical distribution under one trade partner."),
             ("Where in Texas do you support industrial work?",

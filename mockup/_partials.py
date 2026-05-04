@@ -378,6 +378,7 @@ def footer(base: str = "") -> str:
     </div>
   </div>
 </footer>
+{schema_local_business()}
 </body>
 </html>
 """
@@ -388,7 +389,8 @@ def schema_local_business() -> str:
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "GeneralContractor",
+  "@type": ["LocalBusiness", "HVACBusiness", "ElectricalContractor", "Plumber"],
+  "@id": "https://oakshieldservice.com/#org",
   "name": "Oak Shield Service LLC",
   "description": "Texas-based commercial & industrial MEP contractor — HVAC, refrigeration, electrical and plumbing for data centers, hospitality, cold storage, and big-box retail.",
   "url": "https://oakshieldservice.com",
