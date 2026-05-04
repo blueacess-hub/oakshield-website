@@ -114,7 +114,7 @@ def build_services():
   <div class="relative max-w-7xl mx-auto px-6">
     <div class="grid lg:grid-cols-12 gap-10">
       <div class="lg:col-span-5">
-        <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-3">// {num} — {kicker}</div>
+        <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-3">// {kicker}</div>
         <h2 class="display text-4xl lg:text-5xl font-extrabold leading-[1.04] mb-6">{title}</h2>
         <p class="text-base text-ink/70 leading-relaxed mb-8">{intro}</p>
         <a href="markets/data-centers.html" class="inline-flex items-center gap-2 text-sm font-bold safety border-b-2 border-current pb-1">
