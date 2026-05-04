@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oak Shield Service – Commercial & Industrial MEP Contractor in Texas</title>
+<meta name="description" content="Texas-based commercial & industrial MEP contractor delivering HVAC, refrigeration, electrical and plumbing for data centers, hospitality, cold storage and big-box retail. Trusted by GCs across Houston and Dallas.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0B1220;
+    --ink-2: #131C2E;
+    --line: #1F2A3F;
+    --steel: #2C3A52;
+    --paper: #F4F4F0;
+    --paper-2: #E8E8E0;
+    --safety: #E26B2C;
+    --safety-dark: #B8541C;
+    --signal: #5BA5C9;
+  }
+  body { font-family: 'Inter', sans-serif; background: var(--paper); color: var(--ink); }
+  h1, h2, h3, .display { font-family: 'Manrope', sans-serif; letter-spacing: -0.02em; }
+  .ink-bg { background: var(--ink); }
+  .ink2-bg { background: var(--ink-2); }
+  .paper-bg { background: var(--paper); }
+  .paper2-bg { background: var(--paper-2); }
+  .safety { color: var(--safety); }
+  .safety-bg { background: var(--safety); }
+  .signal { color: var(--signal); }
+  .border-line { border-color: var(--line); }
+  .grid-bg {
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .blueprint-bg {
+    background-image:
+      linear-gradient(to right, rgba(91,165,201,0.12) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(91,165,201,0.12) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+  .num-display { font-feature-settings: 'tnum' 1; font-variant-numeric: tabular-nums; }
+  .underline-safety { text-decoration: underline; text-decoration-color: var(--safety); text-decoration-thickness: 3px; text-underline-offset: 6px; }
+  /* Hero photo placeholder — looks like a dark industrial render */
+  .hero-photo {
+    background:
+      radial-gradient(ellipse at 30% 20%, rgba(91,165,201,0.18) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 80%, rgba(226,107,44,0.15) 0%, transparent 55%),
+      linear-gradient(135deg, #0B1220 0%, #131C2E 50%, #1F2A3F 100%);
+  }
+  .card-photo-1 { background: linear-gradient(135deg, #1a2235 0%, #0f1525 100%); }
+  .card-photo-2 { background: linear-gradient(135deg, #1c1f1a 0%, #0f1110 100%); }
+  .card-photo-3 { background: linear-gradient(135deg, #2a1a1a 0%, #0f0a0a 100%); }
+  .card-photo-4 { background: linear-gradient(135deg, #1a2a2a 0%, #0a1515 100%); }
+  .placeholder-mark::after {
+    content: 'PLACEHOLDER';
+    position: absolute; top: 12px; right: 12px;
+    font-size: 10px; letter-spacing: 0.15em;
+    background: rgba(226,107,44,0.92); color: white;
+    padding: 4px 8px; border-radius: 2px;
+    font-weight: 700;
+  }
+  .chip {
+    display: inline-flex; align-items: center;
+    font-size: 11px; letter-spacing: 0.12em;
+    text-transform: uppercase; font-weight: 600;
+    padding: 4px 10px; border-radius: 999px;
+  }
+  .nav-link { transition: color 150ms; }
+  .nav-link:hover { color: var(--safety); }
+  .nav-dropdown { position: relative; padding-bottom: 18px; margin-bottom: -18px; }
+  .nav-dropdown-menu {
+    position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(-6px);
+    min-width: 220px; background: var(--ink-2); border: 1px solid var(--line);
+    padding: 8px 0; opacity: 0; visibility: hidden; pointer-events: none;
+    transition: opacity 220ms 200ms, visibility 0ms 420ms, transform 220ms 200ms;
+    z-index: 60;
+  }
+  .nav-dropdown-menu::before { content:''; position:absolute; top:-20px; left:0; right:0; height:20px; }
+  .nav-dropdown:hover .nav-dropdown-menu,
+  .nav-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1; visibility: visible; pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+    transition: opacity 150ms 0ms, visibility 0ms 0ms, transform 150ms 0ms;
+  }
+  .nav-dropdown-menu a {
+    display: block; padding: 10px 18px; font-size: 13px; color: rgba(255,255,255,0.85);
+    transition: background 120ms, color 120ms;
+  }
+  .nav-dropdown-menu a:hover { background: var(--ink); color: var(--safety); }
+  .nav-caret { display: inline-block; margin-left: 4px; transition: transform 150ms; }
+  .nav-dropdown:hover .nav-caret { transform: rotate(180deg); }
+  /* Mobile nav drawer */
+  .mobile-nav-drawer { max-height: 0; overflow: hidden; background: var(--ink); border-top: 1px solid var(--line); transition: max-height 280ms cubic-bezier(0.4,0.0,0.2,1); }
+  .mobile-nav-drawer.mobile-nav-open { max-height: 80vh; overflow-y: auto; }
+  .mobile-nav-link { display: block; padding: 14px 24px; font-size: 15px; font-weight: 500; color: rgba(255,255,255,0.92); border-bottom: 1px solid var(--line); }
+  .mobile-nav-link:active, .mobile-nav-link:hover { background: var(--ink-2); color: var(--safety); }
+  .mobile-nav-section { border-bottom: 1px solid var(--line); }
+  .mobile-nav-section > summary { list-style: none; }
+  .mobile-nav-section > summary::-webkit-details-marker { display: none; }
+  .mobile-nav-section[open] > summary { color: var(--safety); }
+  .mobile-nav-section[open] > summary svg { transform: rotate(180deg); }
+  .mobile-nav-sublink { display: block; padding: 12px 24px 12px 40px; font-size: 14px; color: rgba(255,255,255,0.75); background: rgba(0,0,0,0.25); border-top: 1px solid rgba(255,255,255,0.04); }
+  .mobile-nav-sublink:active, .mobile-nav-sublink:hover { color: var(--safety); }
+  /* ⚡ Hero conduit pulse — electric current flowing along cable trays */
+  .conduit-pulse {
+    stroke-dasharray: 14 320;
+    animation-name: conduit-flow;
+    animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+    animation-iteration-count: infinite;
+    will-change: stroke-dashoffset, opacity;
+  }
+  .conduit-pulse.cp-1 { animation-duration: 4.2s; animation-delay: 0s; }
+  .conduit-pulse.cp-2 { animation-duration: 4.2s; animation-delay: 0.7s; }
+  .conduit-pulse.cp-3 { animation-duration: 5.0s; animation-delay: 1.4s; }
+  .conduit-pulse.cp-4 { animation-duration: 5.0s; animation-delay: 2.1s; }
+  .conduit-pulse.cp-5 { animation-duration: 3.6s; animation-delay: 0.4s; stroke-dasharray: 10 220; }
+  @keyframes conduit-flow {
+    0%   { stroke-dashoffset: 0;    opacity: 0;   }
+    8%   {                            opacity: 1;   }
+    85%  {                            opacity: 1;   }
+    100% { stroke-dashoffset: -334;  opacity: 0;   }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .conduit-pulse { animation: none; opacity: 0.35; }
+  }
+  .btn-primary {
+    background: var(--safety); color: white;
+    padding: 14px 22px; font-weight: 600; font-size: 14px;
+    letter-spacing: 0.04em; text-transform: uppercase;
+    transition: background 150ms;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-primary:hover { background: var(--safety-dark); }
+  .btn-ghost {
+    border: 1px solid currentColor;
+    padding: 13px 22px; font-weight: 600; font-size: 14px;
+    letter-spacing: 0.04em; text-transform: uppercase;
+    transition: all 150ms;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-ghost:hover { background: currentColor; }
+  .btn-ghost:hover span { color: var(--ink); }
+  details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; }
+
+  /* ============ DATA CENTER HERO ANIMATION ============ */
+  .dc-stage {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    background:
+      radial-gradient(ellipse at 50% 110%, rgba(91,165,201,0.22) 0%, transparent 55%),
+      radial-gradient(ellipse at 0% 0%, rgba(226,107,44,0.12) 0%, transparent 60%),
+      linear-gradient(160deg, #050810 0%, #0B1220 50%, #0F1A2E 100%);
+    overflow: hidden;
+    border: 1px solid rgba(91,165,201,0.18);
+  }
+  .dc-grid-floor {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(to right, rgba(91,165,201,0.10) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(91,165,201,0.10) 1px, transparent 1px);
+    background-size: 36px 36px;
+    mask-image: linear-gradient(to bottom, transparent 0%, transparent 40%, black 70%, black 100%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, transparent 40%, black 70%, black 100%);
+    transform: perspective(700px) rotateX(60deg) translateY(15%);
+    transform-origin: bottom;
+  }
+  .dc-scan {
+    position: absolute; left: 0; right: 0; height: 100px;
+    background: linear-gradient(to bottom, transparent 0%, rgba(91,165,201,0.18) 50%, transparent 100%);
+    animation: dc-scan-vertical 6s linear infinite;
+    pointer-events: none;
+    mix-blend-mode: screen;
+  }
+  @keyframes dc-scan-vertical {
+    0% { transform: translateY(-120px); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(620px); opacity: 0; }
+  }
+  .dc-rack {
+    fill: #131C2E;
+    stroke: rgba(91,165,201,0.35);
+    stroke-width: 1;
+  }
+  .dc-rack-frame { fill: #0B1220; stroke: rgba(91,165,201,0.5); stroke-width: 1.2; }
+  .dc-led {
+    transform-origin: center;
+    animation: led-pulse 2.4s ease-in-out infinite;
+  }
+  .dc-led-1 { animation-delay: 0s; fill: #5BA5C9; }
+  .dc-led-2 { animation-delay: 0.3s; fill: #5BA5C9; }
+  .dc-led-3 { animation-delay: 0.6s; fill: #5BA5C9; }
+  .dc-led-4 { animation-delay: 0.9s; fill: #E26B2C; }
+  .dc-led-5 { animation-delay: 1.2s; fill: #5BA5C9; }
+  .dc-led-6 { animation-delay: 1.5s; fill: #5BA5C9; }
+  .dc-led-warm { fill: #E26B2C; animation-delay: 0.4s; }
+  @keyframes led-pulse {
+    0%, 70%, 100% { opacity: 0.35; filter: drop-shadow(0 0 0px currentColor); }
+    35% { opacity: 1; filter: drop-shadow(0 0 4px currentColor); }
+  }
+  .dc-flow-line {
+    fill: none;
+    stroke: #5BA5C9;
+    stroke-width: 1.2;
+    stroke-dasharray: 4 8;
+    animation: flow 3s linear infinite;
+    opacity: 0.55;
+  }
+  .dc-flow-line.warm { stroke: #E26B2C; animation-duration: 2.2s; opacity: 0.7; }
+  .dc-flow-line.slow { animation-duration: 5s; opacity: 0.35; }
+  @keyframes flow {
+    0% { stroke-dashoffset: 0; }
+    100% { stroke-dashoffset: -48; }
+  }
+  .dc-packet {
+    fill: #5BA5C9;
+    filter: drop-shadow(0 0 4px #5BA5C9);
+    animation: packet 4s linear infinite;
+  }
+  .dc-packet.warm { fill: #E26B2C; filter: drop-shadow(0 0 5px #E26B2C); animation-duration: 3.2s; animation-delay: 1s; }
+  .dc-packet-2 { animation-delay: 1.3s; }
+  .dc-packet-3 { animation-delay: 2.6s; }
+  @keyframes packet {
+    0% { offset-distance: 0%; opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { offset-distance: 100%; opacity: 0; }
+  }
+  .dc-rotor {
+    transform-origin: center;
+    animation: spin 8s linear infinite;
+  }
+  .dc-rotor.fast { animation-duration: 3s; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .dc-spark {
+    fill: #E26B2C;
+    animation: spark 1.4s ease-out infinite;
+    transform-origin: center;
+  }
+  .dc-spark-2 { animation-delay: 0.5s; }
+  .dc-spark-3 { animation-delay: 0.9s; }
+  @keyframes spark {
+    0% { opacity: 0; transform: scale(0.4); }
+    20% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(2); }
+  }
+  .dc-text { font-family: 'JetBrains Mono', 'Courier New', monospace; fill: rgba(91,165,201,0.7); font-size: 9px; }
+  .dc-text-warm { fill: #E26B2C; }
+  .dc-bar {
+    animation: bar-fill 2.2s ease-in-out infinite;
+    transform-origin: left center;
+  }
+  @keyframes bar-fill {
+    0%, 100% { transform: scaleX(0.3); }
+    50% { transform: scaleX(1); }
+  }
+  .dc-overlay-meta {
+    position: absolute;
+    background: rgba(11,18,32,0.8);
+    border: 1px solid rgba(91,165,201,0.35);
+    backdrop-filter: blur(4px);
+    padding: 10px 12px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: rgba(255,255,255,0.85);
+  }
+
+  /* ============ CLIENT LOGO WALL ============ */
+  .client-logo {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.02);
+    transition: all 200ms ease;
+    filter: grayscale(100%) opacity(0.65);
+    position: relative;
+  }
+  .client-logo:hover { filter: grayscale(0%) opacity(1); border-color: rgba(91,165,201,0.4); }
+  .client-logo .auth-tag {
+    position: absolute; top: 4px; right: 4px;
+    font-size: 7px; letter-spacing: 0.1em;
+    background: rgba(226,107,44,0.85); color: white;
+    padding: 1px 4px; border-radius: 1px;
+    font-weight: 700;
+    font-family: monospace;
+  }
+  /* NVIDIA-style wordmark (placeholder, NOT actual NVIDIA logo) */
+  .lg-nvidia { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 18px; letter-spacing: 0.05em; color: #76B900; text-transform: uppercase; }
+  /* Costco-style */
+  .lg-costco { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 18px; color: #E31837; letter-spacing: 0.02em; }
+  .lg-costco span { color: #005DAA; }
+  /* Blossom Hotel-style */
+  .lg-blossom { font-family: 'Manrope', sans-serif; font-weight: 700; font-size: 14px; color: #C9A66B; letter-spacing: 0.18em; text-transform: uppercase; }
+  /* OCM-style */
+  .lg-ocm { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 18px; color: #ffffff; letter-spacing: 0.04em; }
+  .lg-ocm span { color: #5BA5C9; }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- ======= ANNOUNCEMENT BAR ======= -->
+<div class="ink-bg text-white text-xs">
+  <div class="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
+    <div class="flex items-center gap-4 text-white/70">
+      <span class="hidden md:inline">Texas-based · Houston · Dallas · Austin · San Antonio</span>
+    </div>
+    <div class="flex items-center gap-5 text-white/80">
+      <a href="tel:+17138150552" class="flex items-center gap-1.5 hover:text-white">
+        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+        713-815-0552
+      </a>
+      <a href="mailto:info@oakshieldservice.com" class="hidden sm:flex items-center gap-1.5 hover:text-white">
+        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+        info@oakshieldservice.com
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ======= HEADER / NAV ======= -->
+<header class="sticky top-0 z-50 ink-bg border-b border-line">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3 text-white">
+      <!-- Logo mark -->
+      <svg class="w-9 h-9" viewBox="0 0 40 40" fill="none">
+        <path d="M20 3 L34 9 V20 C34 28 27 35 20 37 C13 35 6 28 6 20 V9 L20 3 Z" stroke="#E26B2C" stroke-width="2" fill="rgba(226,107,44,0.08)"/>
+        <path d="M14 18 L20 14 L26 18 V26 H22 V21 H18 V26 H14 Z" fill="#E26B2C"/>
+      </svg>
+      <div class="leading-tight">
+        <div class="text-lg font-extrabold tracking-tight">OAK SHIELD</div>
+        <div class="text-[10px] uppercase tracking-[0.2em] text-white/50">Commercial · Industrial · MEP</div>
+      </div>
+    </a>
+    <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-white/85">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <div class="nav-dropdown">
+        <a href="markets/data-centers.html" class="nav-link flex items-center">Markets<svg class="nav-caret w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></a>
+        <div class="nav-dropdown-menu">
+          <a href="markets/data-centers.html">Data Centers</a>
+          <a href="markets/hospitality.html">Hospitality</a>
+          <a href="markets/cold-storage.html">Cold Storage</a>
+          <a href="markets/big-box-retail.html">Big-Box Retail</a>
+          <a href="markets/industrial.html">Industrial</a>
+        </div>
+      </div>
+      <a href="company.html" class="nav-link">Company</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <a href="contact.html" class="hidden lg:inline-flex btn-primary text-xs">
+      Request Capability Statement
+      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+    </a>
+    <button class="lg:hidden text-white p-2 -mr-2" aria-label="Open menu" onclick="document.getElementById('mobile-nav').classList.toggle('mobile-nav-open')">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <div id="mobile-nav" class="lg:hidden mobile-nav-drawer">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="services.html" class="mobile-nav-link">Services</a>
+    <details class="mobile-nav-section">
+      <summary class="mobile-nav-link flex items-center justify-between cursor-pointer">Markets<svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></summary>
+      <a href="markets/data-centers.html" class="mobile-nav-sublink">Data Centers</a>
+      <a href="markets/hospitality.html" class="mobile-nav-sublink">Hospitality</a>
+      <a href="markets/cold-storage.html" class="mobile-nav-sublink">Cold Storage</a>
+      <a href="markets/big-box-retail.html" class="mobile-nav-sublink">Big-Box Retail</a>
+      <a href="markets/industrial.html" class="mobile-nav-sublink">Industrial</a>
+    </details>
+    <a href="company.html" class="mobile-nav-link">Company</a>
+    <a href="contact.html" class="mobile-nav-link">Contact</a>
+    <a href="contact.html" class="btn-primary mx-6 mt-4 mb-6 justify-center">Request Capability Statement<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></a>
+  </div>
+</header>
+
+<!-- ======= HERO ======= -->
+<section class="relative ink-bg text-white overflow-hidden min-h-[640px] lg:min-h-[760px] flex items-center">
+  <!-- Hero background: data center under construction -->
+  <div class="absolute inset-0">
+    <img src="../assets/generated/hero_datacenter_construction.png" alt="Hyperscale data center under construction in Texas — exposed cable trays, conduit runs and electrical rough-in" class="w-full h-full object-cover"/>
+    <!-- Dark gradient: opaque on left for text legibility, fading toward right where cable trays are visible -->
+    <div class="absolute inset-0 bg-gradient-to-r from-[#0B1220] via-[#0B1220]/85 to-[#0B1220]/30"></div>
+    <div class="absolute inset-0 grid-bg opacity-30"></div>
+    <!-- ⚡ SVG conduit pulse overlay — flowing electric current along visible cable trays -->
+    <svg class="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <defs>
+        <filter id="conduit-glow" x="-30%" y="-30%" width="160%" height="160%">
+          <feGaussianBlur stdDeviation="3" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <!-- Path 1: top horizontal cable tray, left half -->
+      <path class="conduit-pulse cp-1" d="M 200 95 L 760 95 L 800 130" fill="none" stroke="#5BA5C9" stroke-width="2.5" stroke-linecap="round" filter="url(#conduit-glow)"/>
+      <!-- Path 2: top horizontal cable tray, right half -->
+      <path class="conduit-pulse cp-2" d="M 1400 95 L 840 95 L 800 130" fill="none" stroke="#5BA5C9" stroke-width="2.5" stroke-linecap="round" filter="url(#conduit-glow)"/>
+      <!-- Path 3: left wall vertical conduit drop to electrical panel -->
+      <path class="conduit-pulse cp-3" d="M 200 95 L 200 380 L 240 410" fill="none" stroke="#E26B2C" stroke-width="2.5" stroke-linecap="round" filter="url(#conduit-glow)"/>
+      <!-- Path 4: right wall vertical conduit drop to electrical panel -->
+      <path class="conduit-pulse cp-4" d="M 1400 95 L 1400 380 L 1360 410" fill="none" stroke="#E26B2C" stroke-width="2.5" stroke-linecap="round" filter="url(#conduit-glow)"/>
+      <!-- Path 5: ceiling cable bundle going deep into corridor (vanishing point) -->
+      <path class="conduit-pulse cp-5" d="M 760 130 Q 800 240 800 380" fill="none" stroke="#5BA5C9" stroke-width="2" stroke-linecap="round" filter="url(#conduit-glow)" opacity="0.7"/>
+    </svg>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-6 py-24 lg:py-32 w-full">
+    <div class="max-w-2xl">
+      <span class="chip safety-bg text-white mb-6 inline-flex">Texas MEP Contractor</span>
+      <h1 class="display text-5xl lg:text-7xl font-extrabold leading-[1.02]">
+        Self-performing mechanical &amp; electrical for
+        <span class="safety">inspection-driven Texas builds.</span>
+      </h1>
+      <p class="mt-7 text-lg text-white/85 max-w-xl leading-relaxed">
+        HVAC, refrigeration, electrical and plumbing — under one estimating desk, one project manager, one accountability chain.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-4">
+        <a href="markets/data-centers.html" class="btn-primary">
+          Explore Markets We Serve
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+        <a href="contact.html" class="text-sm text-white/85 hover:text-white border-b border-white/40 hover:border-white pb-1 self-center">or submit an RFP &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom safety stripe -->
+  <div class="absolute bottom-0 left-0 right-0 h-[3px]" style="background:linear-gradient(to right, transparent 0%, #E26B2C 25%, #E26B2C 75%, transparent 100%);"></div>
+</section>
+
+<!-- ======= CLIENT LOGO WALL ======= -->
+<section class="ink-bg text-white border-t border-line">
+  <div class="max-w-7xl mx-auto px-6 py-12">
+    <div class="flex flex-col lg:flex-row lg:items-center gap-8">
+      <div class="lg:w-1/4">
+        <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-2">// Trusted On</div>
+        <div class="text-sm text-white/70 leading-relaxed">
+          Selected projects delivered for national-scale GCs and developers.
+        </div>
+      </div>
+      <div class="lg:w-3/4 grid grid-cols-2 sm:grid-cols-4 gap-3">
+        <div class="client-logo">
+          <span class="lg-nvidia">NVIDIA</span>
+        </div>
+        <div class="client-logo">
+          <span class="lg-costco">CO<span>STCO</span></span>
+        </div>
+        <div class="client-logo">
+          <span class="lg-blossom">Blossom Hotel</span>
+        </div>
+        <div class="client-logo">
+          <span class="lg-ocm">OCM<span> · MUSHROOM</span></span>
+        </div>
+      </div>
+    </div>
+    <div class="mt-6 pt-6 border-t border-line flex flex-wrap gap-x-8 gap-y-2 text-xs text-white/45">
+      <span class="flex items-center gap-2"><span class="w-1 h-1 bg-white/45 rounded-full"></span>Mission-critical electrical</span>
+      <span class="flex items-center gap-2"><span class="w-1 h-1 bg-white/45 rounded-full"></span>Big-box retail HVAC</span>
+      <span class="flex items-center gap-2"><span class="w-1 h-1 bg-white/45 rounded-full"></span>Full-service hotel MEP</span>
+      <span class="flex items-center gap-2"><span class="w-1 h-1 bg-white/45 rounded-full"></span>Food-grade cold storage</span>
+    </div>
+  </div>
+</section>
+
+<!-- ======= SERVICES ======= -->
+<section id="services" class="paper-bg py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-12 gap-10 mb-14">
+      <div class="lg:col-span-5">
+        <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-4">// 01 — Capabilities</div>
+        <h2 class="display text-4xl lg:text-5xl font-extrabold leading-tight">
+          Four disciplines.<br>
+          <span class="underline-safety">One coordinated trade partner.</span>
+        </h2>
+      </div>
+      <div class="lg:col-span-6 lg:col-start-7 flex items-end">
+        <p class="text-base text-ink/70 leading-relaxed">
+          Self-performed scope across mechanical, electrical, refrigeration and plumbing — sequenced and inspection-ready under a single point of accountability. We work as part of the GC's project team, not against it.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-px paper2-bg border border-line/30">
+      <!-- HVAC -->
+      <div class="paper-bg p-8 group hover:bg-white transition-colors">
+        <div class="flex items-center justify-between mb-6">
+          <div class="w-12 h-12 ink-bg flex items-center justify-center">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M3 12h18M5.636 5.636l12.728 12.728M5.636 18.364l12.728-12.728"/>
+            </svg>
+          </div>
+          <span class="text-xs font-mono text-ink/40">01</span>
+        </div>
+        <h3 class="text-xl font-extrabold mb-3">HVAC</h3>
+        <p class="text-sm text-ink/65 leading-relaxed mb-5">
+          Commercial & industrial HVAC for new construction and retrofit. Air distribution, packaged units, split systems, VRF/VRV and mechanical room equipment.
+        </p>
+        <ul class="text-xs text-ink/55 space-y-1.5 border-t border-line/20 pt-4">
+          <li>· Ductwork & air distribution</li>
+          <li>· VRF / VRV systems</li>
+          <li>· Rooftop units & AHUs</li>
+          <li>· Mechanical retrofits</li>
+        </ul>
+      </div>
+      <!-- Refrigeration -->
+      <div class="paper-bg p-8 group hover:bg-white transition-colors">
+        <div class="flex items-center justify-between mb-6">
+          <div class="w-12 h-12 ink-bg flex items-center justify-center">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"/>
+            </svg>
+          </div>
+          <span class="text-xs font-mono text-ink/40">02</span>
+        </div>
+        <h3 class="text-xl font-extrabold mb-3">Refrigeration & Cold Storage</h3>
+        <p class="text-sm text-ink/65 leading-relaxed mb-5">
+          Industrial refrigeration and food-grade cold storage. Walk-ins, freezers, process refrigeration and temperature-controlled environments.
+        </p>
+        <ul class="text-xs text-ink/55 space-y-1.5 border-t border-line/20 pt-4">
+          <li>· Walk-in coolers & freezers</li>
+          <li>· Process refrigeration</li>
+          <li>· Refrigeration piping & insulation</li>
+          <li>· System commissioning</li>
+        </ul>
+      </div>
+      <!-- Electrical -->
+      <div class="paper-bg p-8 group hover:bg-white transition-colors">
+        <div class="flex items-center justify-between mb-6">
+          <div class="w-12 h-12 ink-bg flex items-center justify-center">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <span class="text-xs font-mono text-ink/40">03</span>
+        </div>
+        <h3 class="text-xl font-extrabold mb-3">Electrical</h3>
+        <p class="text-sm text-ink/65 leading-relaxed mb-5">
+          Commercial & industrial electrical. Power distribution, equipment connections, control wiring and mission-critical system integration.
+        </p>
+        <ul class="text-xs text-ink/55 space-y-1.5 border-t border-line/20 pt-4">
+          <li>· Power distribution</li>
+          <li>· Equipment connections</li>
+          <li>· Control & low-voltage</li>
+          <li>· Data center electrical</li>
+        </ul>
+      </div>
+      <!-- Plumbing -->
+      <div class="paper-bg p-8 group hover:bg-white transition-colors">
+        <div class="flex items-center justify-between mb-6">
+          <div class="w-12 h-12 ink-bg flex items-center justify-center">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+            </svg>
+          </div>
+          <span class="text-xs font-mono text-ink/40">04</span>
+        </div>
+        <h3 class="text-xl font-extrabold mb-3">Plumbing</h3>
+        <p class="text-sm text-ink/65 leading-relaxed mb-5">
+          Commercial & industrial plumbing as part of integrated MEP delivery. Water supply, drainage, and process-supporting infrastructure.
+        </p>
+        <ul class="text-xs text-ink/55 space-y-1.5 border-t border-line/20 pt-4">
+          <li>· Domestic water systems</li>
+          <li>· Drainage & venting</li>
+          <li>· Process plumbing</li>
+          <li>· Trade coordination</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-10">
+      <a href="contact.html" class="inline-flex items-center gap-2 text-sm font-bold safety border-b-2 border-current pb-1">
+        Discuss multi-trade scope with our team
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======= MARKETS SERVED ======= -->
+<section id="markets" class="ink-bg text-white py-24 relative overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-40"></div>
+  <div class="relative max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-12 gap-10 mb-14 items-end">
+      <div class="lg:col-span-7">
+        <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-4">// 02 — Markets Served</div>
+        <h2 class="display text-4xl lg:text-5xl font-extrabold leading-tight">
+          Five inspection-driven verticals.<br>
+          <span class="underline-safety">A signature project in each.</span>
+        </h2>
+      </div>
+      <div class="lg:col-span-4 lg:col-start-9">
+        <p class="text-sm text-white/65 leading-relaxed">
+          We don't list "everything we'll do." Each market below shows our actual reference build, the scope we self-perform, and adjacent project types we're qualified for.
+        </p>
+      </div>
+    </div>
+
+    <!-- 01 — DATA CENTERS -->
+    <div class="ink2-bg border border-line mb-4">
+      <div class="grid lg:grid-cols-12">
+        <!-- Left: market header -->
+        <div class="lg:col-span-3 p-7 border-b lg:border-b-0 lg:border-r border-line">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-mono text-white/40">01 / 05</span>
+            <svg class="w-8 h-8 safety" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12V7a2 2 0 012-2h10a2 2 0 012 2v5m-14 0h14m-14 0v5a2 2 0 002 2h10a2 2 0 002-2v-5M9 9h.01M9 16h.01"/></svg>
+          </div>
+          <h3 class="text-2xl font-extrabold mb-2">Data Centers</h3>
+          <p class="text-xs text-white/55 leading-relaxed">Mission-critical power distribution and cooling for AI / HPC / colo facilities.</p>
+        </div>
+        <!-- Middle: signature project -->
+        <div class="lg:col-span-5 p-7 border-b lg:border-b-0 lg:border-r border-line">
+          <div class="text-[10px] safety font-bold uppercase tracking-[0.2em] mb-3">Signature Project</div>
+          <div class="text-xl font-extrabold mb-1">NVIDIA Data Center</div>
+          <div class="text-xs text-white/55 mb-4">Dallas, TX · Electrical Subcontractor · 2026</div>
+          <p class="text-sm text-white/70 leading-relaxed mb-4">
+            Mission-critical electrical for NVIDIA-tenant data center: power distribution, equipment connections, and inspection-driven coordination across active build phases.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="chip border border-white/15 text-white/70 text-[10px]">480V · 4000A</span>
+            <span class="chip border border-white/15 text-white/70 text-[10px]">Mission-critical</span>
+            <span class="chip border border-white/15 text-white/70 text-[10px]">AI / HPC</span>
+          </div>
+        </div>
+        <!-- Right: capabilities & sub-verticals -->
+        <div class="lg:col-span-4 p-7">
+          <div class="mb-5">
+            <div class="text-[10px] text-white/45 font-bold uppercase tracking-[0.2em] mb-3">Self-Performed Scope</div>
+            <ul class="space-y-1.5 text-xs text-white/75">
+              <li>· Switchgear & power distribution</li>
+              <li>· Equipment & busway connections</li>
+              <li>· CRAH / cooling integration</li>
+              <li>· Code-compliant inspection coord.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="text-[10px] text-white/45 font-bold uppercase tracking-[0.2em] mb-3">Adjacent Project Types</div>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="chip ink-bg text-white/70 text-[10px]">Hyperscale</span>
+              <span class="chip ink-bg text-white/70 text-[10px]">Colocation</span>
+              <span class="chip ink-bg text-white/70 text-[10px]">Edge / Modular</span>
+              <span class="chip ink-bg text-white/70 text-[10px]">Telecom MDF</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 02 — HOSPITALITY -->
+    <div class="ink2-bg border border-line mb-4">
+      <div class="grid lg:grid-cols-12">
+        <div class="lg:col-span-3 p-7 border-b lg:border-b-0 lg:border-r border-line">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-mono text-white/40">02 / 05</span>
+            <svg class="w-8 h-8 safety" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+          </div>
+          <h3 class="text-2xl font-extrabold mb-2">Hospitality</h3>
+          <p class="text-xs text-white/55 leading-relaxed">Full-service hotels and mixed-use developments requiring integrated MEP coordination.</p>
+        </div>
+        <div class="lg:col-span-5 p-7 border-b lg:border-b-0 lg:border-r border-line">
+          <div class="text-[10px] safety font-bold uppercase tracking-[0.2em] mb-3">Signature Project</div>
+          <div class="text-xl font-extrabold mb-1">Blossom Hotel Houston</div>
+          <div class="text-xs text-white/55 mb-4">Houston, TX · Full MEP Contractor</div>
+          <p class="text-sm text-white/70 leading-relaxed mb-4">
+            Full-discipline mechanical, electrical and plumbing for a full-service hotel development — sequenced to interior fit-out and inspection schedule.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="chip border border-white/15 text-white/70 text-[10px]">All Trades</span>
+            <span class="chip border border-white/15 text-white/70 text-[10px]">Guest-room VRF</span>
+            <span class="chip border border-white/15 text-white/70 text-[10px]">F&amp;B kitchen</span>
+          </div>
+        </div>
+        <div class="lg:col-span-4 p-7">
+          <div class="mb-5">
+            <div class="text-[10px] text-white/45 font-bold uppercase tracking-[0.2em] mb-3">Self-Performed Scope</div>
+            <ul class="space-y-1.5 text-xs text-white/75">
+              <li>· Guest-room VRF / split systems</li>
+              <li>· Kitchen exhaust &amp; grease duct</li>
+              <li>· Public-area air distribution</li>
+              <li>· Domestic water &amp; drainage risers</li>
+            </ul>
+          </div>
+          <div>
+            <div class="text-[10px] text-white/45 font-bold uppercase tracking-[0.2em] mb-3">Adjacent Project Types</div>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="chip ink-bg text-white/70 text-[10px]">Boutique hotels</span>
+              <span class="chip ink-bg text-white/70 text-[10px]">Resorts</span>
+              <span class="chip ink-bg text-white/70 text-[10px]">Mixed-use</span>
+              <span class="chip ink-bg text-white/70 text-[10px]">Senior living</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 03 — COLD STORAGE -->
+    <div class="ink2-bg border border-line mb-4">
+      <div class="grid lg:grid-cols-12">
+        <div class="lg:col-span-3 p-7 border-b lg:border-b-0 lg:border-r border-line">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-mono text-white/40">03 / 05</span>
+            <svg class="w-8 h-8 safety" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18m9-9H3M5.636 5.636l12.728 12.728M5.636 18.364l12.728-12.728"/></svg>
+          </div>
+          <h3 class="text-2xl font-extrabold mb-2">Cold Storage &amp; Food</h3>
+          <p class="text-xs text-white/55 leading-relaxed">Food-grade industrial refrigeration and process-driven cold environments.</p>
+        </div>
+        <div class="lg:col-span-5 p-7 border-b lg:border-b-0 lg:border-r border-line">
+          <div class="text-[10px] safety font-bold uppercase tracking-[0.2em] mb-3">Signature Project</div>
+          <div class="text-xl font-extrabold mb-1">OCM Mushroom Cold Storage</div>
+          <div class="text-xs text-white/55 mb-4">Texas · Refrigeration Contractor</div>
+          <p class="text-sm text-white/70 leading-relaxed mb-4">
+            Food-grade industrial refrigeration: walk-in coolers and freezers, refrigeration piping and insulation, with system integration for temperature-controlled production.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="chip border border-white/15 text-white/70 text-[10px]">Walk-in / Freezer</span>
+            <span class="chip border border-white/15 text-white/70 text-[10px]">Process refrig.</span>
+            <span class="chip border border-white/15 text-white/70 text-[10px]">Food-grade</span>
+          </div>
+        </div>
+        <div class="lg:col-span-4 p-7">
+          <div class="mb-5">
+            <div class="text-[10px] text-white/45 font-bold uppercase tracking-[0.2em] mb-3">Self-Performed Scope</div>
+            <ul class="space-y-1.5 text-xs text-white/75">
+              <li>· Walk-in coolers &amp; freezers</li>
+              <li>· Refrigeration piping &amp; insulation</li>
+              <li>· Process &amp; blast freezing</li>
+              <li>· Commissioning &amp; controls</li>
+            </ul>
+          </div>
+          <div>
+            <div class="text-[10px] text-white/45 font-bold uppercase tracking-[0.2em] mb-3">Adjacent Project Types</div>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="chip ink-bg text-white/70 text-[10px]">3PL cold DC</span>
+              <span class="chip ink-bg text-white/70 text-[10px]">Meat / seafood</span>
+              <span class="chip ink-bg text-white/70 text-[10px]">Pharma cold</span>
+              <span class="chip ink-bg text-white/70 text-[10px]">Beverage</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 04 — BIG-BOX RETAIL -->
+    <div class="ink2-bg border border-line mb-4">
+      <div class="grid lg:grid-cols-12">
+        <div class="lg:col-span-3 p-7 border-b lg:border-b-0 lg:border-r border-line">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-mono text-white/40">04 / 05</span>
+            <svg class="w-8 h-8 safety" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+          </div>
+          <h3 class="text-2xl font-extrabold mb-2">Big-Box Retail</h3>
+          <p class="text-xs text-white/55 leading-relaxed">Large-format retail and warehouse-club facilities built to national brand standards.</p>
+        </div>
+        <div class="lg:col-span-5 p-7 border-b lg:border-b-0 lg:border-r border-line">
+          <div class="text-[10px] safety font-bold uppercase tracking-[0.2em] mb-3">Signature Project</div>
+          <div class="text-xl font-extrabold mb-1">Costco Business Center</div>
+          <div class="text-xs text-white/55 mb-4">Stafford, TX · HVAC Subcontractor</div>
+          <p class="text-sm text-white/70 leading-relaxed mb-4">
+            Equipment setting, ductwork installation and multi-trade coordination for a large-scale commercial retail facility — built to Costco's national prototype standards.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="chip border border-white/15 text-white/70 text-[10px]">RTU / packaged</span>
+            <span class="chip border border-white/15 text-white/70 text-[10px]">Refrigerated cases</span>
+            <span class="chip border border-white/15 text-white/70 text-[10px]">National prototype</span>
+          </div>
+        </div>
+        <div class="lg:col-span-4 p-7">
+          <div class="mb-5">
+            <div class="text-[10px] text-white/45 font-bold uppercase tracking-[0.2em] mb-3">Self-Performed Scope</div>
+            <ul class="space-y-1.5 text-xs text-white/75">
+              <li>· Rooftop-unit setting &amp; rigging</li>
+              <li>· Ductwork &amp; air balancing</li>
+              <li>· Refrigerated case lineups</li>
+              <li>· Trade-stack coordination</li>
+            </ul>
+          </div>
+          <div>
+            <div class="text-[10px] text-white/45 font-bold uppercase tracking-[0.2em] mb-3">Adjacent Project Types</div>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="chip ink-bg text-white/70 text-[10px]">Walmart / Sam's</span>
+              <span class="chip ink-bg text-white/70 text-[10px]">Target / HEB</span>
+              <span class="chip ink-bg text-white/70 text-[10px]">Home improvement</span>
+              <span class="chip ink-bg text-white/70 text-[10px]">Multi-site rollout</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 05 — INDUSTRIAL -->
+    <div class="ink2-bg border border-line mb-4">
+      <div class="grid lg:grid-cols-12">
+        <div class="lg:col-span-3 p-7 border-b lg:border-b-0 lg:border-r border-line">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-mono text-white/40">05 / 05</span>
+            <svg class="w-8 h-8 safety" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m-1 4h1m4-8h1m-1 4h1m-1 4h1m-5 4h4"/></svg>
+          </div>
+          <h3 class="text-2xl font-extrabold mb-2">Industrial</h3>
+          <p class="text-xs text-white/55 leading-relaxed">Process-driven facilities, manufacturing retrofits, and mission-critical industrial MEP.</p>
+        </div>
+        <div class="lg:col-span-5 p-7 border-b lg:border-b-0 lg:border-r border-line">
+          <div class="text-[10px] safety font-bold uppercase tracking-[0.2em] mb-3">Capability Highlight</div>
+          <div class="text-xl font-extrabold mb-1">Process &amp; Manufacturing MEP</div>
+          <div class="text-xs text-white/55 mb-4">Texas Statewide · GC Partner Pipeline</div>
+          <p class="text-sm text-white/70 leading-relaxed mb-4">
+            Multi-trade MEP for active manufacturing and process facilities — engineered to operate alongside production schedules with strict downtime and inspection windows.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="chip border border-white/15 text-white/70 text-[10px]">Process piping</span>
+            <span class="chip border border-white/15 text-white/70 text-[10px]">High-tonnage</span>
+            <span class="chip border border-white/15 text-white/70 text-[10px]">24/7 turnover</span>
+          </div>
+        </div>
+        <div class="lg:col-span-4 p-7">
+          <div class="mb-5">
+            <div class="text-[10px] text-white/45 font-bold uppercase tracking-[0.2em] mb-3">Self-Performed Scope</div>
+            <ul class="space-y-1.5 text-xs text-white/75">
+              <li>· Process exhaust &amp; ventilation</li>
+              <li>· High-amp power distribution</li>
+              <li>· Chiller / boiler integration</li>
+              <li>· Plant retrofit &amp; tie-in</li>
+            </ul>
+          </div>
+          <div>
+            <div class="text-[10px] text-white/45 font-bold uppercase tracking-[0.2em] mb-3">Adjacent Project Types</div>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="chip ink-bg text-white/70 text-[10px]">Food &amp; beverage</span>
+              <span class="chip ink-bg text-white/70 text-[10px]">Battery / EV</span>
+              <span class="chip ink-bg text-white/70 text-[10px]">Aerospace</span>
+              <span class="chip ink-bg text-white/70 text-[10px]">Oil &amp; gas downstream</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 flex flex-wrap items-center justify-between gap-4 text-sm text-white/55">
+      <div>Don't see your project type? <span class="text-white">Most industrial &amp; commercial scopes overlap.</span></div>
+      <a href="contact.html" class="inline-flex items-center gap-2 text-sm font-bold safety border-b-2 border-current pb-1">
+        Discuss your project
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======= FEATURED PROJECTS ======= -->
+<section id="projects" class="paper-bg py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-12 gap-10 mb-14 items-end">
+      <div class="lg:col-span-7">
+        <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-4">// 03 — Featured Projects</div>
+        <h2 class="display text-4xl lg:text-5xl font-extrabold leading-tight">
+          Real scope.<br>
+          <span class="underline-safety">Real GCs. Real inspections.</span>
+        </h2>
+      </div>
+      <div class="lg:col-span-4 lg:col-start-9 flex justify-end">
+        <a href="markets/data-centers.html" class="btn-ghost text-ink"><span>Explore by Market</span></a>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <!-- Project 1: NVIDIA -->
+      <article class="bg-white border border-line/20 group overflow-hidden">
+        <a href="markets/data-centers.html" class="block aspect-[16/10] relative overflow-hidden">
+          <img src="../assets/generated/project_nvidia_dc.png" alt="NVIDIA Data Center electrical installation in Dallas TX — server cabinets and overhead cable trays" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          <div class="absolute bottom-3 left-4 text-[10px] font-mono text-white/70 tracking-widest">// 01 / DALLAS · ELECTRICAL</div>
+        </a>
+        <div class="p-7">
+          <div class="flex items-center justify-between mb-3">
+            <span class="chip ink-bg text-white">Data Center · Electrical</span>
+            <span class="text-xs font-mono text-ink/40">Dallas, TX</span>
+          </div>
+          <h3 class="text-2xl font-extrabold mb-2">NVIDIA Data Center</h3>
+          <p class="text-sm text-ink/65 leading-relaxed mb-5">
+            Electrical installation supporting mission-critical data center infrastructure: power distribution, equipment connections, and inspection-driven coordination.
+          </p>
+          <div class="grid grid-cols-3 gap-3 text-xs border-t border-line/20 pt-4">
+            <div><div class="text-ink/45 mb-1">Location</div><div class="font-bold">Dallas, TX</div></div>
+            <div><div class="text-ink/45 mb-1">Client</div><div class="font-bold">Hyperscale Operator</div></div>
+            <div><div class="text-ink/45 mb-1">Oak Shield</div><div class="font-bold">Electrical Sub</div></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: Costco -->
+      <article class="bg-white border border-line/20 group overflow-hidden">
+        <a href="markets/big-box-retail.html" class="block aspect-[16/10] relative overflow-hidden">
+          <img src="../assets/generated/project_costco_rooftop.png" alt="Costco Business Center rooftop HVAC packaged units in Stafford TX — aerial view" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          <div class="absolute bottom-3 left-4 text-[10px] font-mono text-white/70 tracking-widest">// 02 / STAFFORD · HVAC</div>
+        </a>
+        <div class="p-7">
+          <div class="flex items-center justify-between mb-3">
+            <span class="chip ink-bg text-white">Big-Box Retail · HVAC</span>
+            <span class="text-xs font-mono text-ink/40">Stafford, TX</span>
+          </div>
+          <h3 class="text-2xl font-extrabold mb-2">Costco Business Center</h3>
+          <p class="text-sm text-ink/65 leading-relaxed mb-5">
+            HVAC installation and ductwork for a large-scale commercial retail facility, coordinated with electrical and structural trades on an active build schedule.
+          </p>
+          <div class="grid grid-cols-3 gap-3 text-xs border-t border-line/20 pt-4">
+            <div><div class="text-ink/45 mb-1">Location</div><div class="font-bold">Stafford, TX</div></div>
+            <div><div class="text-ink/45 mb-1">Client</div><div class="font-bold">Costco Wholesale</div></div>
+            <div><div class="text-ink/45 mb-1">Oak Shield</div><div class="font-bold">HVAC Sub</div></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3: Blossom Hotel -->
+      <article class="bg-white border border-line/20 group overflow-hidden">
+        <a href="markets/hospitality.html" class="block aspect-[16/10] relative overflow-hidden">
+          <img src="../assets/generated/project_blossom_hotel.png" alt="Blossom Hotel Houston mechanical penthouse — chiller plant with skyline view" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          <div class="absolute bottom-3 left-4 text-[10px] font-mono text-white/70 tracking-widest">// 03 / HOUSTON · FULL MEP</div>
+        </a>
+        <div class="p-7">
+          <div class="flex items-center justify-between mb-3">
+            <span class="chip ink-bg text-white">Hospitality · Full MEP</span>
+            <span class="text-xs font-mono text-ink/40">Houston, TX</span>
+          </div>
+          <h3 class="text-2xl font-extrabold mb-2">Blossom Hotel Houston</h3>
+          <p class="text-sm text-ink/65 leading-relaxed mb-5">
+            Full-discipline mechanical, electrical and plumbing for a full-service hotel development. Integrated MEP coordination across construction sequencing.
+          </p>
+          <div class="grid grid-cols-3 gap-3 text-xs border-t border-line/20 pt-4">
+            <div><div class="text-ink/45 mb-1">Location</div><div class="font-bold">Houston, TX</div></div>
+            <div><div class="text-ink/45 mb-1">Client</div><div class="font-bold">Blossom Hotel</div></div>
+            <div><div class="text-ink/45 mb-1">Oak Shield</div><div class="font-bold">All-trade MEP</div></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4: OCM Mushroom -->
+      <article class="bg-white border border-line/20 group overflow-hidden">
+        <a href="markets/cold-storage.html" class="block aspect-[16/10] relative overflow-hidden">
+          <img src="../assets/generated/project_ocm_coldstorage.png" alt="OCM Mushroom industrial cold storage refrigeration plant in Texas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          <div class="absolute bottom-3 left-4 text-[10px] font-mono text-white/70 tracking-widest">// 04 / TEXAS · REFRIGERATION</div>
+        </a>
+        <div class="p-7">
+          <div class="flex items-center justify-between mb-3">
+            <span class="chip ink-bg text-white">Cold Storage · Refrigeration</span>
+            <span class="text-xs font-mono text-ink/40">Texas</span>
+          </div>
+          <h3 class="text-2xl font-extrabold mb-2">OCM Mushroom Cold Storage</h3>
+          <p class="text-sm text-ink/65 leading-relaxed mb-5">
+            Food-grade industrial refrigeration: walk-in coolers and freezers, refrigeration piping and insulation, with system integration for temperature-controlled production.
+          </p>
+          <div class="grid grid-cols-3 gap-3 text-xs border-t border-line/20 pt-4">
+            <div><div class="text-ink/45 mb-1">Location</div><div class="font-bold">Texas</div></div>
+            <div><div class="text-ink/45 mb-1">Client</div><div class="font-bold">OCM Mushroom</div></div>
+            <div><div class="text-ink/45 mb-1">Oak Shield</div><div class="font-bold">Refrig. Contractor</div></div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ======= WHY OAK SHIELD ======= -->
+<section id="why" class="paper2-bg py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-12 gap-10 mb-14">
+      <div class="lg:col-span-5">
+        <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-4">// 04 — Why Oak Shield</div>
+        <h2 class="display text-4xl lg:text-5xl font-extrabold leading-tight">
+          We work as part of <br>
+          <span class="underline-safety">your project team.</span>
+        </h2>
+        <p class="mt-6 text-ink/70 leading-relaxed">
+          GCs don't need another sub that drops scope at the dropline. They need a partner that owns coordination, sequencing, and inspection — without finger-pointing.
+        </p>
+      </div>
+      <div class="lg:col-span-7">
+        <div class="grid sm:grid-cols-2 gap-px paper-bg border border-line/20">
+          <div class="paper2-bg p-7">
+            <div class="text-3xl safety mb-3">→</div>
+            <h3 class="text-lg font-extrabold mb-2">Self-Performed MEP</h3>
+            <p class="text-sm text-ink/65 leading-relaxed">Four trades under one roof eliminates trade-stack delay and finger-pointing on RFIs.</p>
+          </div>
+          <div class="paper2-bg p-7">
+            <div class="text-3xl safety mb-3">→</div>
+            <h3 class="text-lg font-extrabold mb-2">Inspection-Driven Scheduling</h3>
+            <p class="text-sm text-ink/65 leading-relaxed">We sequence to inspectors, not to ourselves. Code compliance is non-negotiable.</p>
+          </div>
+          <div class="paper2-bg p-7">
+            <div class="text-3xl safety mb-3">→</div>
+            <h3 class="text-lg font-extrabold mb-2">Mission-Critical Experience</h3>
+            <p class="text-sm text-ink/65 leading-relaxed">From NVIDIA-backed data center electrical to food-grade cold storage. Complexity is the baseline.</p>
+          </div>
+          <div class="paper2-bg p-7">
+            <div class="text-3xl safety mb-3">→</div>
+            <h3 class="text-lg font-extrabold mb-2">Texas-Based, Statewide</h3>
+            <p class="text-sm text-ink/65 leading-relaxed">Houston, Dallas, Austin, San Antonio. Local crews, local code knowledge, no travel mark-up surprises.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= COMPANY / TRUST ======= -->
+<section id="company" class="ink-bg text-white py-24">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12">
+    <div class="lg:col-span-6">
+      <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-4">// 05 — Company</div>
+      <h2 class="display text-4xl lg:text-5xl font-extrabold leading-tight mb-6">
+        Texas roots.<br>
+        Code-compliant by default.
+      </h2>
+      <p class="text-white/70 leading-relaxed mb-5">
+        Oak Shield Service is a Texas-based MEP contractor working with general contractors, owners and design teams on commercial and industrial projects across the state. We hold required HVAC and electrical contractor qualifications and operate in compliance with all applicable state and local codes.
+      </p>
+      <p class="text-white/70 leading-relaxed mb-8">
+        Insurance coverage and compliance documentation are available as required to support project execution and prequalification.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="contact.html" class="btn-primary">Request Capability Statement (PDF)</a>
+        <a href="contact.html" class="btn-ghost text-white"><span>Prequalification Docs</span></a>
+      </div>
+    </div>
+    <div class="lg:col-span-5 lg:col-start-8">
+      <div class="ink2-bg border border-line p-7">
+        <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-5">Compliance & Coverage</div>
+        <dl class="space-y-4 text-sm">
+          <div class="flex justify-between border-b border-line pb-3">
+            <dt class="text-white/55">HVAC License</dt>
+            <dd class="font-mono">[ TACL # — TBD ]</dd>
+          </div>
+          <div class="flex justify-between border-b border-line pb-3">
+            <dt class="text-white/55">Electrical License</dt>
+            <dd class="font-mono">[ TECL # — TBD ]</dd>
+          </div>
+          <div class="flex justify-between border-b border-line pb-3">
+            <dt class="text-white/55">General Liability</dt>
+            <dd class="font-mono">[ Limits — TBD ]</dd>
+          </div>
+          <div class="flex justify-between border-b border-line pb-3">
+            <dt class="text-white/55">Workers' Comp</dt>
+            <dd class="font-mono">[ Carrier — TBD ]</dd>
+          </div>
+          <div class="flex justify-between border-b border-line pb-3">
+            <dt class="text-white/55">Bonding Capacity</dt>
+            <dd class="font-mono">[ Single / Aggregate — TBD ]</dd>
+          </div>
+          <div class="flex justify-between">
+            <dt class="text-white/55">EMR (Safety)</dt>
+            <dd class="font-mono">[ TBD ]</dd>
+          </div>
+        </dl>
+        <div class="mt-5 text-[10px] text-white/40 uppercase tracking-widest">// COIs available upon request</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= CTA / CONTACT ======= -->
+<section id="contact" class="paper-bg py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-12 gap-12">
+      <div class="lg:col-span-5">
+        <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-4">// 06 — Contact</div>
+        <h2 class="display text-4xl lg:text-5xl font-extrabold leading-tight mb-6">
+          Have a project in Texas?<br>
+          <span class="underline-safety">Let's coordinate.</span>
+        </h2>
+        <p class="text-ink/70 leading-relaxed mb-8">
+          Send us scope, location, and timing. We'll respond within one business day with capability fit, prequalification documents, and a project lead.
+        </p>
+        <div class="space-y-5">
+          <a href="tel:+17138150552" class="flex items-start gap-4 group">
+            <div class="w-12 h-12 ink-bg flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+            </div>
+            <div>
+              <div class="text-xs uppercase tracking-wider text-ink/50 mb-1">Phone</div>
+              <div class="text-xl font-extrabold group-hover:safety">713-815-0552</div>
+            </div>
+          </a>
+          <a href="mailto:info@oakshieldservice.com" class="flex items-start gap-4 group">
+            <div class="w-12 h-12 ink-bg flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+            </div>
+            <div>
+              <div class="text-xs uppercase tracking-wider text-ink/50 mb-1">Email</div>
+              <div class="text-xl font-extrabold group-hover:safety">info@oakshieldservice.com</div>
+            </div>
+          </a>
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 ink-bg flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <div>
+              <div class="text-xs uppercase tracking-wider text-ink/50 mb-1">Service Area</div>
+              <div class="font-bold">Houston · Dallas · Austin · San Antonio</div>
+              <div class="text-sm text-ink/55 mt-1">Statewide Texas coverage</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="lg:col-span-7">
+        <form class="bg-white border border-line/20 p-8 space-y-5">
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label class="text-xs uppercase tracking-wider text-ink/55 font-bold block mb-2">Full Name *</label>
+              <input type="text" class="w-full border border-line/30 px-4 py-3 focus:outline-none focus:border-current" style="--tw-text-opacity:1; color: var(--safety);" placeholder="">
+            </div>
+            <div>
+              <label class="text-xs uppercase tracking-wider text-ink/55 font-bold block mb-2">Company *</label>
+              <input type="text" class="w-full border border-line/30 px-4 py-3 focus:outline-none">
+            </div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label class="text-xs uppercase tracking-wider text-ink/55 font-bold block mb-2">Email *</label>
+              <input type="email" class="w-full border border-line/30 px-4 py-3 focus:outline-none">
+            </div>
+            <div>
+              <label class="text-xs uppercase tracking-wider text-ink/55 font-bold block mb-2">Phone</label>
+              <input type="tel" class="w-full border border-line/30 px-4 py-3 focus:outline-none">
+            </div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label class="text-xs uppercase tracking-wider text-ink/55 font-bold block mb-2">Project Type *</label>
+              <select class="w-full border border-line/30 px-4 py-3 focus:outline-none bg-white">
+                <option>— Select —</option>
+                <option>Data Center</option>
+                <option>Hospitality</option>
+                <option>Cold Storage / Food</option>
+                <option>Big-Box Retail</option>
+                <option>Industrial / Other</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-xs uppercase tracking-wider text-ink/55 font-bold block mb-2">Scope Needed *</label>
+              <select class="w-full border border-line/30 px-4 py-3 focus:outline-none bg-white">
+                <option>— Select —</option>
+                <option>HVAC only</option>
+                <option>Refrigeration only</option>
+                <option>Electrical only</option>
+                <option>Plumbing only</option>
+                <option>Multi-trade / Full MEP</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label class="text-xs uppercase tracking-wider text-ink/55 font-bold block mb-2">Project Location *</label>
+            <input type="text" class="w-full border border-line/30 px-4 py-3 focus:outline-none" placeholder="City, TX">
+          </div>
+          <div>
+            <label class="text-xs uppercase tracking-wider text-ink/55 font-bold block mb-2">Scope Description</label>
+            <textarea rows="4" class="w-full border border-line/30 px-4 py-3 focus:outline-none" placeholder="Brief project scope, square footage, target schedule, GC if known..."></textarea>
+          </div>
+          <div class="flex items-start gap-3 text-sm text-ink/65">
+            <input type="checkbox" class="mt-1">
+            <span>I'm a qualified GC, Owner or Design Team contact requesting a project conversation.</span>
+          </div>
+          <button type="submit" class="btn-primary w-full justify-center">
+            Let's Work Together
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+          <div class="text-xs text-ink/45 text-center">Typical response within 1 business day. For urgent prequalification needs, call directly.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= FOOTER ======= -->
+<footer class="ink-bg text-white border-t border-line py-16">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-12 gap-10 mb-12">
+      <div class="lg:col-span-4">
+        <div class="flex items-center gap-3 mb-4">
+          <svg class="w-9 h-9" viewBox="0 0 40 40" fill="none">
+            <path d="M20 3 L34 9 V20 C34 28 27 35 20 37 C13 35 6 28 6 20 V9 L20 3 Z" stroke="#E26B2C" stroke-width="2" fill="rgba(226,107,44,0.08)"/>
+            <path d="M14 18 L20 14 L26 18 V26 H22 V21 H18 V26 H14 Z" fill="#E26B2C"/>
+          </svg>
+          <div>
+            <div class="text-lg font-extrabold">OAK SHIELD</div>
+            <div class="text-[10px] uppercase tracking-[0.2em] text-white/50">Commercial · Industrial · MEP</div>
+          </div>
+        </div>
+        <p class="text-sm text-white/60 leading-relaxed">
+          Texas-based MEP contractor delivering HVAC, refrigeration, electrical and plumbing for commercial and industrial projects.
+        </p>
+      </div>
+      <div class="lg:col-span-2">
+        <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-4">Services</div>
+        <ul class="space-y-2 text-sm text-white/70">
+          <li><a href="services.html#hvac" class="hover:text-white">HVAC</a></li>
+          <li><a href="services.html#refrigeration" class="hover:text-white">Refrigeration</a></li>
+          <li><a href="services.html#electrical" class="hover:text-white">Electrical</a></li>
+          <li><a href="services.html#plumbing" class="hover:text-white">Plumbing</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-2">
+        <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-4">Markets</div>
+        <ul class="space-y-2 text-sm text-white/70">
+          <li><a href="markets/data-centers.html" class="hover:text-white">Data Centers</a></li>
+          <li><a href="markets/hospitality.html" class="hover:text-white">Hospitality</a></li>
+          <li><a href="markets/cold-storage.html" class="hover:text-white">Cold Storage</a></li>
+          <li><a href="markets/big-box-retail.html" class="hover:text-white">Big-Box Retail</a></li>
+          <li><a href="markets/industrial.html" class="hover:text-white">Industrial</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-4">
+        <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-4">Contact</div>
+        <div class="space-y-2 text-sm text-white/70">
+          <div><a href="tel:+17138150552" class="hover:text-white">713-815-0552</a></div>
+          <div><a href="mailto:info@oakshieldservice.com" class="hover:text-white">info@oakshieldservice.com</a></div>
+          <div class="text-white/50">Houston · Dallas · Austin · San Antonio</div>
+          <div class="text-white/50 text-xs mt-3">Mon – Fri · 7:00am – 6:00pm CST<br>Project coordination 24/7 during active builds</div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-line pt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs text-white/45">
+      <div>© 2026 Oak Shield Service LLC. All rights reserved.</div>
+      <div class="flex gap-5">
+        <span>TACL # — TBD</span>
+        <span>TECL # — TBD</span>
+        <span>Bonded · Insured</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact & RFP Submission | Oak Shield Service Texas MEP</title>
+<meta name="description" content="Submit your project inquiry or RFP to Oak Shield Service. Houston-based commercial & industrial MEP contractor. We respond to qualified bids within one business day.">
+<link rel="canonical" href="https://oakshieldservice.com/contact.html">
+<meta property="og:title" content="Contact & RFP Submission | Oak Shield Service Texas MEP">
+<meta property="og:description" content="Submit your project inquiry or RFP to Oak Shield Service. Houston-based commercial & industrial MEP contractor. We respond to qualified bids within one business day.">
+<meta property="og:image" content="../assets/generated/hero_mep_corridor.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0B1220;
+    --ink-2: #131C2E;
+    --line: #1F2A3F;
+    --steel: #2C3A52;
+    --paper: #F4F4F0;
+    --paper-2: #E8E8E0;
+    --safety: #E26B2C;
+    --safety-dark: #B8541C;
+    --signal: #5BA5C9;
+  }
+  body { font-family: 'Inter', sans-serif; background: var(--paper); color: var(--ink); }
+  h1, h2, h3, h4, .display { font-family: 'Manrope', sans-serif; letter-spacing: -0.02em; }
+  .ink-bg { background: var(--ink); }
+  .ink2-bg { background: var(--ink-2); }
+  .paper-bg { background: var(--paper); }
+  .paper2-bg { background: var(--paper-2); }
+  .safety { color: var(--safety); }
+  .safety-bg { background: var(--safety); }
+  .signal { color: var(--signal); }
+  .border-line { border-color: var(--line); }
+  .grid-bg {
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .num-display { font-feature-settings: 'tnum' 1; font-variant-numeric: tabular-nums; }
+  .underline-safety { text-decoration: underline; text-decoration-color: var(--safety); text-decoration-thickness: 3px; text-underline-offset: 6px; }
+  .chip {
+    display: inline-flex; align-items: center;
+    font-size: 11px; letter-spacing: 0.12em;
+    text-transform: uppercase; font-weight: 600;
+    padding: 4px 10px; border-radius: 999px;
+  }
+  .nav-link { transition: color 150ms; position: relative; }
+  .nav-link:hover { color: var(--safety); }
+  .nav-link.active { color: var(--safety); }
+  .nav-link.active::after { content:''; position:absolute; left:0; right:0; bottom:-26px; height:2px; background:var(--safety); }
+  /* Markets dropdown */
+  .nav-dropdown { position: relative; padding-bottom: 18px; margin-bottom: -18px; }
+  .nav-dropdown-menu {
+    position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(-6px);
+    min-width: 220px; background: var(--ink-2); border: 1px solid var(--line);
+    padding: 8px 0; opacity: 0; visibility: hidden; pointer-events: none;
+    transition: opacity 220ms 200ms, visibility 0ms 420ms, transform 220ms 200ms;
+    z-index: 60;
+  }
+  .nav-dropdown-menu::before {
+    content:''; position:absolute; top:-20px; left:0; right:0; height:20px;
+  }
+  .nav-dropdown:hover .nav-dropdown-menu,
+  .nav-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1; visibility: visible; pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+    transition: opacity 150ms 0ms, visibility 0ms 0ms, transform 150ms 0ms;
+  }
+  .nav-dropdown-menu a {
+    display: block; padding: 10px 18px; font-size: 13px; color: rgba(255,255,255,0.85);
+    transition: background 120ms, color 120ms;
+  }
+  .nav-dropdown-menu a:hover { background: var(--ink); color: var(--safety); }
+  .nav-caret { display: inline-block; margin-left: 4px; transition: transform 150ms; }
+  .nav-dropdown:hover .nav-caret { transform: rotate(180deg); }
+  /* Mobile nav drawer */
+  .mobile-nav-drawer {
+    max-height: 0; overflow: hidden;
+    background: var(--ink);
+    border-top: 1px solid var(--line);
+    transition: max-height 280ms cubic-bezier(0.4,0.0,0.2,1);
+  }
+  .mobile-nav-drawer.mobile-nav-open { max-height: 80vh; overflow-y: auto; }
+  .mobile-nav-link {
+    display: block; padding: 14px 24px; font-size: 15px; font-weight: 500;
+    color: rgba(255,255,255,0.92); border-bottom: 1px solid var(--line);
+  }
+  .mobile-nav-link:active, .mobile-nav-link:hover { background: var(--ink-2); color: var(--safety); }
+  .mobile-nav-section { border-bottom: 1px solid var(--line); }
+  .mobile-nav-section > summary { list-style: none; }
+  .mobile-nav-section > summary::-webkit-details-marker { display: none; }
+  .mobile-nav-section[open] > summary { color: var(--safety); }
+  .mobile-nav-section[open] > summary svg { transform: rotate(180deg); }
+  .mobile-nav-sublink {
+    display: block; padding: 12px 24px 12px 40px; font-size: 14px;
+    color: rgba(255,255,255,0.75); background: rgba(0,0,0,0.25);
+    border-top: 1px solid rgba(255,255,255,0.04);
+  }
+  .mobile-nav-sublink:active, .mobile-nav-sublink:hover { color: var(--safety); }
+  .btn-primary {
+    background: var(--safety); color: white;
+    padding: 14px 22px; font-weight: 600; font-size: 14px;
+    letter-spacing: 0.04em; text-transform: uppercase;
+    transition: background 150ms;
+    display: inline-flex; align-items: center; gap: 8px;
+    border: none; cursor: pointer;
+  }
+  .btn-primary:hover { background: var(--safety-dark); }
+  .btn-ghost {
+    border: 1px solid currentColor;
+    padding: 13px 22px; font-weight: 600; font-size: 14px;
+    letter-spacing: 0.04em; text-transform: uppercase;
+    transition: all 150ms;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-ghost:hover { background: currentColor; }
+  .btn-ghost:hover span { color: var(--ink); }
+  details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; }
+  .dc-overlay-meta {
+    position: absolute;
+    background: rgba(11,18,32,0.78);
+    border: 1px solid rgba(91,165,201,0.35);
+    backdrop-filter: blur(4px);
+    padding: 10px 12px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: rgba(255,255,255,0.85);
+  }
+  /* Form fields */
+  .field-label { display:block; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.55); font-weight:600; margin-bottom:8px; }
+  .field-input, .field-select, .field-textarea {
+    width: 100%; padding: 14px 16px; background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(91,165,201,0.18); color: white; font-size: 14px;
+    font-family: 'Inter', sans-serif; transition: border-color 150ms, background 150ms;
+  }
+  .field-input:focus, .field-select:focus, .field-textarea:focus {
+    outline: none; border-color: var(--safety); background: rgba(255,255,255,0.06);
+  }
+  .field-textarea { resize: vertical; min-height: 120px; }
+  /* Page-section number watermark */
+  .section-num { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 14vw; letter-spacing: -0.04em; line-height: 1; opacity: 0.04; }
+</style>
+</head>
+<body class="antialiased">
+
+<div class="ink-bg text-white text-xs">
+  <div class="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
+    <div class="flex items-center gap-4 text-white/70">
+      <span class="hidden md:inline">Texas-based · Houston · Dallas · Austin · San Antonio</span>
+    </div>
+    <div class="flex items-center gap-5 text-white/80">
+      <a href="tel:+17138150552" class="flex items-center gap-1.5 hover:text-white">
+        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+        713-815-0552
+      </a>
+      <a href="mailto:info@oakshieldservice.com" class="hidden sm:flex items-center gap-1.5 hover:text-white">
+        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+        info@oakshieldservice.com
+      </a>
+    </div>
+  </div>
+</div>
+
+<header class="sticky top-0 z-50 ink-bg border-b border-line">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3 text-white">
+      <svg class="w-9 h-9" viewBox="0 0 40 40" fill="none">
+        <path d="M20 3 L34 9 V20 C34 28 27 35 20 37 C13 35 6 28 6 20 V9 L20 3 Z" stroke="#E26B2C" stroke-width="2" fill="rgba(226,107,44,0.08)"/>
+        <path d="M14 18 L20 14 L26 18 V26 H22 V21 H18 V26 H14 Z" fill="#E26B2C"/>
+      </svg>
+      <div class="leading-tight">
+        <div class="text-lg font-extrabold tracking-tight">OAK SHIELD</div>
+        <div class="text-[10px] uppercase tracking-[0.2em] text-white/50">Commercial · Industrial · MEP</div>
+      </div>
+    </a>
+    <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-white/85">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <div class="nav-dropdown">
+        <a href="markets/data-centers.html" class="nav-link flex items-center">Markets<svg class="nav-caret w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></a>
+        <div class="nav-dropdown-menu">
+          <a href="markets/data-centers.html">Data Centers</a>
+          <a href="markets/hospitality.html">Hospitality</a>
+          <a href="markets/cold-storage.html">Cold Storage</a>
+          <a href="markets/big-box-retail.html">Big-Box Retail</a>
+          <a href="markets/industrial.html">Industrial</a>
+        </div>
+      </div>
+      <a href="company.html" class="nav-link">Company</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+    <a href="contact.html" class="hidden lg:inline-flex btn-primary text-xs">
+      Request Capability Statement
+      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+    </a>
+    <!-- Mobile hamburger toggle -->
+    <button id="mobile-nav-toggle" class="lg:hidden text-white p-2 -mr-2" aria-label="Open menu" onclick="document.getElementById('mobile-nav').classList.toggle('mobile-nav-open')">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <!-- Mobile nav drawer -->
+  <div id="mobile-nav" class="lg:hidden mobile-nav-drawer">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="services.html" class="mobile-nav-link">Services</a>
+    <details class="mobile-nav-section">
+      <summary class="mobile-nav-link flex items-center justify-between cursor-pointer">Markets<svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></summary>
+      <a href="markets/data-centers.html" class="mobile-nav-sublink">Data Centers</a>
+      <a href="markets/hospitality.html" class="mobile-nav-sublink">Hospitality</a>
+      <a href="markets/cold-storage.html" class="mobile-nav-sublink">Cold Storage</a>
+      <a href="markets/big-box-retail.html" class="mobile-nav-sublink">Big-Box Retail</a>
+      <a href="markets/industrial.html" class="mobile-nav-sublink">Industrial</a>
+    </details>
+    <a href="company.html" class="mobile-nav-link">Company</a>
+    <a href="contact.html" class="mobile-nav-link">Contact</a>
+    <a href="contact.html" class="btn-primary mx-6 mt-4 mb-6 justify-center">Request Capability Statement<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></a>
+  </div>
+</header>
+
+<nav class="ink-bg text-white/55 text-xs border-b border-line">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex items-center gap-2 font-mono">
+    <a href="index.html" class="hover:text-white">Home</a> <span class="text-white/30">/</span> <span class="text-white">Contact</span>
+  </div>
+</nav>
+
+<!-- HERO + RFP FORM -->
+<section class="ink-bg text-white py-20 lg:py-28 relative overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-50"></div>
+  <div class="absolute inset-0">
+    <img src="../assets/generated/hero_mep_corridor.png" alt="" class="w-full h-full object-cover opacity-15"/>
+    <div class="absolute inset-0 bg-gradient-to-r from-[#0B1220] via-[#0B1220]/90 to-[#0B1220]/60"></div>
+  </div>
+  <div class="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12">
+    <!-- Left: pitch + facts -->
+    <div class="lg:col-span-5">
+      <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-4">// Project Inquiry</div>
+      <h1 class="display text-4xl lg:text-5xl font-extrabold leading-[1.04] mb-6">
+        Send us scope.<br>
+        <span class="underline-safety">We'll respond in one business day.</span>
+      </h1>
+      <p class="text-white/75 leading-relaxed mb-10">
+        Use this form for project bids, prequalification submissions, or to request our Capability Statement. For quick scope discussions, call us directly.
+      </p>
+
+      <div class="space-y-5 mb-10">
+        <a href="tel:+17138150552" class="block ink2-bg border border-line p-5 hover:border-safety transition-colors group">
+          <div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-1">// Direct Line</div>
+          <div class="text-2xl font-extrabold group-hover:safety transition-colors">713-815-0552</div>
+          <div class="text-xs text-white/55 mt-1">Estimating desk · weekdays 7 AM – 6 PM CT</div>
+        </a>
+        <a href="mailto:info@oakshieldservice.com" class="block ink2-bg border border-line p-5 hover:border-safety transition-colors group">
+          <div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-1">// Email</div>
+          <div class="text-base font-extrabold group-hover:safety transition-colors break-all">info@oakshieldservice.com</div>
+          <div class="text-xs text-white/55 mt-1">Attach drawings, specs, RFI logs as PDF</div>
+        </a>
+      </div>
+
+      <div class="border-t border-line pt-6">
+        <div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">Service Area</div>
+        <div class="text-sm text-white/85 font-bold mb-1">Texas Statewide</div>
+        <div class="text-xs text-white/55 leading-relaxed">Headquartered in Houston · Active crews across Houston, Dallas, Austin, San Antonio &amp; the build corridors between.</div>
+      </div>
+    </div>
+
+    <!-- Right: RFP form -->
+    <div class="lg:col-span-7">
+      <form id="rfp-form" class="ink2-bg border border-line p-8 lg:p-10 space-y-6" method="post" action="#">
+        <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-2">// RFP Form</div>
+        <h2 class="display text-2xl font-extrabold mb-1">Project Inquiry &amp; Capability Request</h2>
+        <p class="text-sm text-white/55 mb-6">Required fields marked *. We treat all submissions as confidential.</p>
+
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div>
+            <label class="field-label">Full Name *</label>
+            <input class="field-input" type="text" name="name" required>
+          </div>
+          <div>
+            <label class="field-label">Company *</label>
+            <input class="field-input" type="text" name="company" required>
+          </div>
+          <div>
+            <label class="field-label">Role *</label>
+            <select class="field-select" name="role" required>
+              <option value="">Select your role…</option>
+              <option>General Contractor — PM / Estimator</option>
+              <option>Owner / Developer</option>
+              <option>Design Team / Engineer</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label class="field-label">Email *</label>
+            <input class="field-input" type="email" name="email" required>
+          </div>
+          <div>
+            <label class="field-label">Phone</label>
+            <input class="field-input" type="tel" name="phone">
+          </div>
+          <div>
+            <label class="field-label">Project Location</label>
+            <input class="field-input" type="text" name="location" placeholder="City, TX">
+          </div>
+        </div>
+
+        <div>
+          <label class="field-label">Project Type *</label>
+          <select class="field-select" name="project_type" required>
+            <option value="">Select project type…</option>
+            <option>Data Center (AI / HPC / Colo)</option>
+            <option>Hospitality / Hotel</option>
+            <option>Cold Storage / Refrigeration</option>
+            <option>Big-Box Retail / Warehouse Club</option>
+            <option>Industrial / Manufacturing / Process</option>
+            <option>Other Commercial</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="field-label">Scope Needed *</label>
+          <div class="grid sm:grid-cols-2 gap-2 text-sm text-white/85">
+            <label class="flex items-center gap-2 ink-bg border border-line p-3 hover:border-safety/60 cursor-pointer"><input type="checkbox" name="scope" value="hvac" class="accent-orange-500"> HVAC</label>
+            <label class="flex items-center gap-2 ink-bg border border-line p-3 hover:border-safety/60 cursor-pointer"><input type="checkbox" name="scope" value="refrigeration" class="accent-orange-500"> Refrigeration</label>
+            <label class="flex items-center gap-2 ink-bg border border-line p-3 hover:border-safety/60 cursor-pointer"><input type="checkbox" name="scope" value="electrical" class="accent-orange-500"> Electrical</label>
+            <label class="flex items-center gap-2 ink-bg border border-line p-3 hover:border-safety/60 cursor-pointer"><input type="checkbox" name="scope" value="plumbing" class="accent-orange-500"> Plumbing</label>
+            <label class="flex items-center gap-2 ink-bg border border-line p-3 hover:border-safety/60 cursor-pointer sm:col-span-2"><input type="checkbox" name="scope" value="full_mep" class="accent-orange-500"> Full integrated MEP (all four)</label>
+          </div>
+        </div>
+
+        <div>
+          <label class="field-label">Project Description *</label>
+          <textarea class="field-textarea" name="description" rows="5" placeholder="Brief scope, square footage, target schedule, GC name (if applicable), and any relevant project standards or codes." required></textarea>
+        </div>
+
+        <div>
+          <label class="field-label">Documents (Optional)</label>
+          <input class="field-input" type="file" name="documents" multiple accept=".pdf,.dwg,.zip,.docx,.xlsx">
+          <p class="text-[11px] text-white/40 mt-2">PDF / DWG / ZIP / DOCX / XLSX accepted. For large files, send via email.</p>
+        </div>
+
+        <div class="flex items-start gap-3 pt-2">
+          <input type="checkbox" id="confirm" name="confirm_authority" required class="mt-1 accent-orange-500">
+          <label for="confirm" class="text-xs text-white/65 leading-relaxed">
+            I confirm I have authority to share this project information and authorize Oak Shield Service to contact me regarding this inquiry. *
+          </label>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4 pt-2">
+          <button type="submit" class="btn-primary justify-center">
+            Submit Inquiry
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+          <a href="#capability" class="btn-ghost text-white justify-center"><span>Request Capability Statement Only</span></a>
+        </div>
+
+        <p class="text-[11px] text-white/40 pt-3 leading-relaxed">
+          By submitting this form, you acknowledge that Oak Shield Service may contact you about your project. Your information is not shared with third parties.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- CAPABILITY STATEMENT REQUEST (anchor) -->
+<section id="capability" class="paper-bg py-20">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-7">
+      <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-4">// Capability Statement</div>
+      <h2 class="display text-3xl lg:text-4xl font-extrabold leading-tight mb-5">
+        One PDF. All the prequalification facts.
+      </h2>
+      <p class="text-base text-ink/70 leading-relaxed mb-6">
+        Our Capability Statement is the single document you'll need to evaluate Oak Shield as a prequalified subcontractor. It includes our self-performed scope by trade, four signature project references, current license numbers, insurance limits, bonding capacity, and safety program highlights.
+      </p>
+      <ul class="space-y-2 text-sm text-ink/75 mb-8">
+        <li class="flex gap-2"><span class="safety mt-1">▸</span><span>Scope by trade (HVAC, refrigeration, electrical, plumbing)</span></li>
+        <li class="flex gap-2"><span class="safety mt-1">▸</span><span>Project references with role, vertical and scope notes</span></li>
+        <li class="flex gap-2"><span class="safety mt-1">▸</span><span>License numbers (TACL / TECL) and insurance certificate summary</span></li>
+        <li class="flex gap-2"><span class="safety mt-1">▸</span><span>Bonding capacity (single &amp; aggregate)</span></li>
+        <li class="flex gap-2"><span class="safety mt-1">▸</span><span>Safety program &amp; prequalification platform compatibility</span></li>
+      </ul>
+    </div>
+    <div class="lg:col-span-5">
+      <div class="ink-bg text-white p-7 lg:p-8">
+        <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-4">// Quick Request</div>
+        <p class="text-sm text-white/75 mb-5">Email the Capability PDF to a single recipient — no full RFP needed.</p>
+        <form class="space-y-4">
+          <input class="field-input" type="text" name="cap_company" placeholder="Company *" required>
+          <input class="field-input" type="email" name="cap_email" placeholder="Email *" required>
+          <select class="field-select" name="cap_role">
+            <option value="">Your role…</option>
+            <option>General Contractor</option>
+            <option>Owner / Developer</option>
+            <option>Design Team</option>
+            <option>Other</option>
+          </select>
+          <button type="submit" class="btn-primary w-full justify-center">Send Capability PDF</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFICE HOURS + MAP STRIP -->
+<section class="ink-bg text-white py-16 border-t border-line">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-px paper-bg/5 border border-line">
+    <div class="ink2-bg p-7">
+      <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-3">Office Hours</div>
+      <div class="text-base font-bold mb-2">Mon – Fri · 7 AM – 6 PM CT</div>
+      <p class="text-sm text-white/55">For urgent project coordination after hours, contact your assigned PM directly.</p>
+    </div>
+    <div class="ink2-bg p-7">
+      <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-3">Headquarters</div>
+      <div class="text-base font-bold mb-2">Houston, TX</div>
+      <p class="text-sm text-white/55">Specific street address &amp; mailing details provided on request as part of prequalification.</p>
+    </div>
+    <div class="ink2-bg p-7">
+      <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-3">Crew Coverage</div>
+      <div class="text-base font-bold mb-2">Texas Statewide</div>
+      <p class="text-sm text-white/55">Houston · Dallas · Austin · San Antonio &amp; build corridors between. No travel mark-up surprises.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="ink-bg text-white border-t border-line">
+  <div class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-12 gap-10">
+    <div class="md:col-span-5">
+      <div class="flex items-center gap-3">
+        <svg class="w-8 h-8" viewBox="0 0 40 40" fill="none">
+          <path d="M20 3 L34 9 V20 C34 28 27 35 20 37 C13 35 6 28 6 20 V9 L20 3 Z" stroke="#E26B2C" stroke-width="2" fill="rgba(226,107,44,0.08)"/>
+          <path d="M14 18 L20 14 L26 18 V26 H22 V21 H18 V26 H14 Z" fill="#E26B2C"/>
+        </svg>
+        <div>
+          <div class="text-base font-extrabold">OAK SHIELD SERVICE LLC</div>
+          <div class="text-[10px] uppercase tracking-[0.2em] text-white/50">Commercial · Industrial · MEP Contractor</div>
+        </div>
+      </div>
+      <p class="mt-5 text-sm text-white/65 leading-relaxed max-w-md">
+        Texas-based commercial &amp; industrial MEP contractor — self-performed HVAC, refrigeration, electrical and plumbing for inspection-driven complex projects.
+      </p>
+      <div class="mt-6 text-xs text-white/50 space-y-1 font-mono">
+        <div>713-815-0552 · info@oakshieldservice.com</div>
+        <div>Headquartered in Houston, TX · Statewide service</div>
+        <div>TACL # <span class="text-white/35">[pending]</span> · TECL # <span class="text-white/35">[pending]</span></div>
+      </div>
+    </div>
+    <div class="md:col-span-3">
+      <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-4">Services</div>
+      <ul class="space-y-2 text-sm text-white/75">
+        <li><a href="services.html#hvac" class="hover:text-white">HVAC</a></li>
+        <li><a href="services.html#refrigeration" class="hover:text-white">Refrigeration &amp; Cold Storage</a></li>
+        <li><a href="services.html#electrical" class="hover:text-white">Electrical</a></li>
+        <li><a href="services.html#plumbing" class="hover:text-white">Plumbing</a></li>
+      </ul>
+    </div>
+    <div class="md:col-span-2">
+      <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-4">Markets</div>
+      <ul class="space-y-2 text-sm text-white/75">
+        <li><a href="markets/data-centers.html" class="hover:text-white">Data Centers</a></li>
+        <li><a href="markets/hospitality.html" class="hover:text-white">Hospitality</a></li>
+        <li><a href="markets/cold-storage.html" class="hover:text-white">Cold Storage</a></li>
+        <li><a href="markets/big-box-retail.html" class="hover:text-white">Big-Box Retail</a></li>
+        <li><a href="markets/industrial.html" class="hover:text-white">Industrial</a></li>
+      </ul>
+    </div>
+    <div class="md:col-span-2">
+      <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-4">Company</div>
+      <ul class="space-y-2 text-sm text-white/75">
+        <li><a href="company.html" class="hover:text-white">About</a></li>
+        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+        <li><a href="contact.html#capability" class="hover:text-white">Capability Statement</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-line">
+    <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 text-xs text-white/40">
+      <div>&copy; 2026 Oak Shield Service LLC · Houston, TX. All rights reserved.</div>
+      <div class="flex gap-5 font-mono">
+        <span>Insured &amp; Bonded</span>
+        <span class="text-white/25">·</span>
+        <span>Licensed in Texas</span>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "name": "Oak Shield Service LLC",
+  "description": "Texas-based commercial & industrial MEP contractor — HVAC, refrigeration, electrical and plumbing for data centers, hospitality, cold storage, and big-box retail.",
+  "url": "https://oakshieldservice.com",
+  "telephone": "+1-713-815-0552",
+  "email": "info@oakshieldservice.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Houston",
+    "addressRegion": "TX",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    { "@type": "State", "name": "Texas" },
+    { "@type": "City", "name": "Houston" },
+    { "@type": "City", "name": "Dallas" },
+    { "@type": "City", "name": "Austin" },
+    { "@type": "City", "name": "San Antonio" }
+  ],
+  "knowsAbout": [
+    "Commercial HVAC",
+    "Industrial Refrigeration",
+    "Mission-Critical Electrical",
+    "Data Center MEP",
+    "Cold Storage",
+    "Hotel MEP",
+    "Big-Box Retail HVAC"
+  ]
+}
+</script>
