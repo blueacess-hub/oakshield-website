@@ -600,7 +600,7 @@ def build_market_page(slug: str, market_name: str, hero_image: str, hero_alt: st
     body = head(
         title=meta_title, description=meta_desc,
         canonical=f"https://oakshieldservice.com/markets/{slug}.html",
-        og_image=f"../../../assets/generated/{hero_image}",
+        og_image=f"../../assets/generated/{hero_image}",
         base_path="../",
     ) + announcement_bar() + header(active="markets", base="../") + breadcrumb([
         ("Home", "../index.html"), ("Markets", f"../markets/{slug}.html"), (market_name, "")
@@ -610,7 +610,7 @@ def build_market_page(slug: str, market_name: str, hero_image: str, hero_alt: st
     body += f"""
 <section class="relative ink-bg text-white overflow-hidden">
   <div class="absolute inset-0">
-    <img src="../../../assets/generated/{hero_image}" alt="{hero_alt}" class="w-full h-full object-cover opacity-50"/>
+    <img src="../../assets/generated/{hero_image}" alt="{hero_alt}" class="w-full h-full object-cover opacity-50"/>
     <div class="absolute inset-0 bg-gradient-to-r from-[#0B1220] via-[#0B1220]/85 to-transparent"></div>
     <div class="absolute inset-0 grid-bg opacity-40"></div>
   </div>
@@ -653,7 +653,7 @@ def build_market_page(slug: str, market_name: str, hero_image: str, hero_alt: st
     <div class="grid lg:grid-cols-12 gap-10 items-center">
       <div class="lg:col-span-7">
         <div class="aspect-[16/10] overflow-hidden border border-line">
-          <img src="../../../assets/generated/{sig_image}" alt="{sig_title}" class="w-full h-full object-cover"/>
+          <img src="../../assets/generated/{sig_image}" alt="{sig_title}" class="w-full h-full object-cover"/>
         </div>
       </div>
       <div class="lg:col-span-5">
