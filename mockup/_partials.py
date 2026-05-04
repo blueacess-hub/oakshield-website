@@ -208,7 +208,7 @@ def header(active: str = "", base: str = "") -> str:
       </div>
     </a>
     <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-white/85">
-      <a href="{base}index.html" class="{cls('home')}">Home</a>
+      <a href="{base}index.html" class="{cls('home')}">Overview</a>
       <a href="{base}services.html" class="{cls('services')}">Services</a>
       <div class="nav-dropdown">
         <a href="{base}markets/data-centers.html" class="{cls('markets')} flex items-center">Markets<svg class="nav-caret w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></a>
@@ -234,7 +234,7 @@ def header(active: str = "", base: str = "") -> str:
   </div>
   <!-- Mobile nav drawer -->
   <div id="mobile-nav" class="lg:hidden mobile-nav-drawer">
-    <a href="{base}index.html" class="mobile-nav-link">Home</a>
+    <a href="{base}index.html" class="mobile-nav-link">Overview</a>
     <a href="{base}services.html" class="mobile-nav-link">Services</a>
     <details class="mobile-nav-section">
       <summary class="mobile-nav-link flex items-center justify-between cursor-pointer">Markets<svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></summary>
@@ -280,7 +280,7 @@ def page_hero(eyebrow: str, title_html: str, subtitle: str, image_path: str, ima
   <div class="relative max-w-7xl mx-auto px-6 py-20 lg:py-28">
     <div class="max-w-3xl">
       <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-4">{eyebrow}</div>
-      <h1 class="display text-4xl lg:text-6xl font-extrabold leading-[1.04]">{title_html}</h1>
+      <h1 class="display text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-[1.08]">{title_html}</h1>
       <p class="mt-6 text-base lg:text-lg text-white/75 leading-relaxed max-w-2xl">{subtitle}</p>
     </div>
   </div>
