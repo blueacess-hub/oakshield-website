@@ -573,7 +573,7 @@ def build_contact():
     </div>
     <div class="ink2-bg p-7">
       <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-3">Crew Coverage</div>
-      <div class="text-base font-bold mb-2">Texas Statewide</div>
+      <div class="text-base font-bold mb-2">4 Major Markets + Build Corridors</div>
       <p class="text-sm text-white/55">Houston (HQ) · Dallas/Fort Worth · Austin · San Antonio + I-10, I-35, I-45 corridors. For projects outside these markets, ask us about partnered execution.</p>
     </div>
   </div>
