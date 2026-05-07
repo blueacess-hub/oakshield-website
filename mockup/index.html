@@ -315,22 +315,21 @@
     font-family: monospace;
   }
   /* All 4 wordmarks share base typography for consistent visual mass */
-  .lg-nvidia, .lg-costco, .lg-blossom, .lg-ocm {
-    font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 16px;
-    line-height: 1; letter-spacing: 0.04em; text-transform: uppercase;
+  .lg-hyperscale, .lg-warehouseclub, .lg-blossom, .lg-ocm {
+    font-family: 'Manrope', sans-serif; font-weight: 800;
+    line-height: 1; letter-spacing: 0.06em; text-transform: uppercase;
+    text-align: center;
   }
+  /* Sanitized neutral wordmarks (no client trademark colors / wordmarks) */
+  .lg-hyperscale { color: #ffffff; font-size: 11px; letter-spacing: 0.16em; }
+  .lg-warehouseclub { color: #ffffff; font-size: 11px; letter-spacing: 0.16em; }
+  .lg-blossom { color: #ffffff; font-size: 13px; letter-spacing: 0.14em; }
+  .lg-ocm { color: #ffffff; font-size: 13px; letter-spacing: 0.04em; }
   @media (min-width: 640px) {
-    .lg-nvidia, .lg-costco, .lg-blossom, .lg-ocm { font-size: 17px; }
-  }
-  /* Brand color accents */
-  .lg-nvidia { color: #76B900; letter-spacing: 0.05em; }
-  .lg-costco { color: #E31837; letter-spacing: 0.02em; }
-  .lg-costco span { color: #005DAA; }
-  .lg-blossom { color: #C9A66B; font-size: 13px; letter-spacing: 0.14em; }
-  @media (min-width: 640px) {
+    .lg-hyperscale, .lg-warehouseclub { font-size: 12px; letter-spacing: 0.18em; }
     .lg-blossom { font-size: 14px; letter-spacing: 0.18em; }
+    .lg-ocm { font-size: 14px; }
   }
-  .lg-ocm { color: #ffffff; letter-spacing: 0.04em; }
   .lg-ocm > .ocm-suffix { color: #5BA5C9; }
   /* Hide "· MUSHROOM" suffix on narrow mobile to keep cells aligned */
   @media (max-width: 380px) {
@@ -454,8 +453,17 @@
         <span class="safety">inspection-driven Texas builds.</span>
       </h1>
       <p class="mt-5 sm:mt-7 text-base sm:text-lg text-white/85 max-w-xl leading-relaxed">
-        HVAC, refrigeration, electrical and plumbing — one estimating desk, one project manager, one warranty contact.
+        HVAC, refrigeration and electrical — self-performed, with plumbing through our licensed TSBPE partner. One estimating desk, one project manager, one warranty contact.
       </p>
+      <div class="mt-5 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-white/55 font-mono">
+        <span>EMR <span class="text-white font-bold">0.85</span></span>
+        <span class="text-white/25">·</span>
+        <span>DART <span class="text-white font-bold">0.0</span></span>
+        <span class="text-white/25">·</span>
+        <span>OSHA-10 <span class="text-white font-bold">100%</span></span>
+        <span class="text-white/25">·</span>
+        <span>TACL <span class="text-white font-bold">#111021 Class A</span></span>
+      </div>
       <div class="mt-9 flex flex-wrap gap-4">
         <a href="markets/data-centers.html" class="btn-primary">
           Explore Markets We Serve
@@ -482,13 +490,13 @@
       </div>
       <div class="lg:w-3/4 grid grid-cols-2 sm:grid-cols-4 gap-3">
         <div class="client-logo">
-          <span class="lg-nvidia">NVIDIA</span>
+          <span class="lg-hyperscale">Hyperscale AI Tenant<br><span class="text-white/45 text-[9px] tracking-[0.14em]">Dallas · ≥100MW</span></span>
         </div>
         <div class="client-logo">
-          <span class="lg-costco">CO<span>STCO</span></span>
+          <span class="lg-warehouseclub">National Warehouse-Club<br><span class="text-white/45 text-[9px] tracking-[0.14em]">Stafford, TX</span></span>
         </div>
         <div class="client-logo">
-          <span class="lg-blossom">BLOSSOM</span>
+          <span class="lg-blossom">BLOSSOM HOTEL</span>
         </div>
         <div class="client-logo">
           <span class="lg-ocm">OCM<span class="ocm-suffix"> · MUSHROOM</span></span>
@@ -517,7 +525,7 @@
       </div>
       <div class="lg:col-span-6 lg:col-start-7 flex items-end">
         <p class="text-base text-ink/70 leading-relaxed">
-          Self-performed scope across mechanical, electrical, refrigeration and plumbing — sequenced and inspection-ready under a single point of accountability. We work as part of the GC's project team, not against it.
+          Self-performed mechanical, electrical and refrigeration scope — with plumbing through our licensed TSBPE partner under unified Oak Shield project management. Sequenced and inspection-ready under a single point of accountability. We work as part of the GC&rsquo;s project team, not against it.
         </p>
       </div>
     </div>
@@ -660,14 +668,15 @@
         <!-- Middle: signature project -->
         <div class="lg:col-span-5 p-7 border-b lg:border-b-0 lg:border-r border-line">
           <div class="text-[10px] safety font-bold uppercase tracking-[0.2em] mb-3">Signature Project</div>
-          <div class="text-xl font-extrabold mb-1">NVIDIA Data Center</div>
-          <div class="text-xs text-white/55 mb-4">Dallas, TX · Electrical Subcontractor · 2026</div>
+          <div class="text-xl font-extrabold mb-1">Hyperscale AI Tenant Data Center</div>
+          <div class="text-xs text-white/55 mb-4">Dallas Area, TX · Electrical Subcontractor · ≥100MW IT load</div>
           <p class="text-sm text-white/70 leading-relaxed mb-4">
-            Mission-critical electrical for NVIDIA-tenant data center: power distribution, equipment connections, and inspection-driven coordination across active build phases.
+            ≥100MW hyperscale electrical scope: medium-voltage distribution up to 25kV, UPS install &amp; power feed (Eaton &amp; ABB authorized), switchgear set + tie-in, and inspection-driven energization sequencing.
           </p>
           <div class="flex flex-wrap gap-2">
             <span class="chip border border-white/15 text-white/70 text-[10px]">Mission-critical</span>
             <span class="chip border border-white/15 text-white/70 text-[10px]">AI / HPC</span>
+            <span class="chip border border-white/15 text-white/70 text-[10px]">≥100MW</span>
           </div>
         </div>
         <!-- Right: capabilities & sub-verticals -->
@@ -804,10 +813,10 @@
         </div>
         <div class="lg:col-span-5 p-7 border-b lg:border-b-0 lg:border-r border-line">
           <div class="text-[10px] safety font-bold uppercase tracking-[0.2em] mb-3">Signature Project</div>
-          <div class="text-xl font-extrabold mb-1">Costco Business Center</div>
+          <div class="text-xl font-extrabold mb-1">National Warehouse-Club Prototype</div>
           <div class="text-xs text-white/55 mb-4">Stafford, TX · HVAC Subcontractor</div>
           <p class="text-sm text-white/70 leading-relaxed mb-4">
-            Equipment setting, ductwork installation and multi-trade coordination for a large-scale commercial retail facility — built to Costco's national prototype standards.
+            Equipment setting, ductwork installation and multi-trade coordination for a large-scale national-prototype warehouse-club facility — built to brand-standard construction documents.
           </p>
           <div class="flex flex-wrap gap-2">
             <span class="chip border border-white/15 text-white/70 text-[10px]">RTU / packaged</span>
@@ -913,10 +922,10 @@
     </div>
 
     <div class="grid md:grid-cols-2 gap-6">
-      <!-- Project 1: NVIDIA -->
+      <!-- Project 1: Hyperscale AI Tenant (Dallas) -->
       <article class="bg-white border border-line/20 group overflow-hidden">
         <a href="markets/data-centers.html" class="block aspect-[16/10] relative overflow-hidden">
-          <img src="../assets/generated/project_nvidia_dc.png" alt="NVIDIA Data Center electrical installation in Dallas TX — server cabinets and overhead cable trays" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
+          <img src="../assets/generated/project_nvidia_dc.png" alt="Hyperscale AI tenant data center electrical installation in Dallas TX — server cabinets and overhead cable trays" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
           <div class="absolute bottom-3 left-4 text-[10px] font-mono text-white/70 tracking-widest">// 01 / DALLAS · ELECTRICAL</div>
         </a>
@@ -925,22 +934,22 @@
             <span class="chip ink-bg text-white">Data Center · Electrical</span>
             <span class="text-xs font-mono text-ink/40">Dallas, TX</span>
           </div>
-          <h3 class="text-2xl font-extrabold mb-2">NVIDIA Data Center</h3>
+          <h3 class="text-2xl font-extrabold mb-2">Hyperscale AI Tenant Data Center</h3>
           <p class="text-sm text-ink/65 leading-relaxed mb-5">
-            Electrical installation supporting mission-critical data center infrastructure: power distribution, equipment connections, and inspection-driven coordination.
+            ≥100MW hyperscale AI / HPC build. Medium-voltage distribution up to 25kV, UPS install &amp; power feed (Eaton &amp; ABB authorized), switchgear set + tie-in, and inspection-driven energization sequencing.
           </p>
           <div class="grid grid-cols-3 gap-3 text-xs border-t border-line/20 pt-4">
-            <div><div class="text-ink/45 mb-1">Location</div><div class="font-bold">Dallas, TX</div></div>
-            <div><div class="text-ink/45 mb-1">Client</div><div class="font-bold">Hyperscale Operator</div></div>
+            <div><div class="text-ink/45 mb-1">Scale</div><div class="font-bold">≥100MW IT</div></div>
+            <div><div class="text-ink/45 mb-1">Vertical</div><div class="font-bold">AI / HPC Hyperscale</div></div>
             <div><div class="text-ink/45 mb-1">Oak Shield</div><div class="font-bold">Electrical Sub</div></div>
           </div>
         </div>
       </article>
 
-      <!-- Project 2: Costco -->
+      <!-- Project 2: National Warehouse-Club (Stafford) -->
       <article class="bg-white border border-line/20 group overflow-hidden">
         <a href="markets/big-box-retail.html" class="block aspect-[16/10] relative overflow-hidden">
-          <img src="../assets/generated/project_costco_rooftop.png" alt="Costco Business Center rooftop HVAC packaged units in Stafford TX — aerial view" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
+          <img src="../assets/generated/project_costco_rooftop.png" alt="National warehouse-club rooftop HVAC packaged units in Stafford TX — aerial view" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
           <div class="absolute bottom-3 left-4 text-[10px] font-mono text-white/70 tracking-widest">// 02 / STAFFORD · HVAC</div>
         </a>
@@ -949,13 +958,13 @@
             <span class="chip ink-bg text-white">Big-Box Retail · HVAC</span>
             <span class="text-xs font-mono text-ink/40">Stafford, TX</span>
           </div>
-          <h3 class="text-2xl font-extrabold mb-2">Costco Business Center</h3>
+          <h3 class="text-2xl font-extrabold mb-2">National Warehouse-Club Prototype</h3>
           <p class="text-sm text-ink/65 leading-relaxed mb-5">
-            HVAC installation and ductwork for a large-scale commercial retail facility, coordinated with electrical and structural trades on an active build schedule.
+            HVAC installation and ductwork for a large-scale national-prototype warehouse-club facility — built to brand-standard construction documents and inspection sequencing on a fast-paced commercial build.
           </p>
           <div class="grid grid-cols-3 gap-3 text-xs border-t border-line/20 pt-4">
             <div><div class="text-ink/45 mb-1">Location</div><div class="font-bold">Stafford, TX</div></div>
-            <div><div class="text-ink/45 mb-1">Client</div><div class="font-bold">Costco Wholesale</div></div>
+            <div><div class="text-ink/45 mb-1">Format</div><div class="font-bold">National Prototype</div></div>
             <div><div class="text-ink/45 mb-1">Oak Shield</div><div class="font-bold">HVAC Sub</div></div>
           </div>
         </div>
@@ -1041,7 +1050,7 @@
           <div class="paper2-bg p-7">
             <div class="text-3xl safety mb-3">→</div>
             <h3 class="text-lg font-extrabold mb-2">Mission-Critical Experience</h3>
-            <p class="text-sm text-ink/65 leading-relaxed">From NVIDIA-backed data center electrical to food-grade cold storage. Complexity is the baseline.</p>
+            <p class="text-sm text-ink/65 leading-relaxed">From ≥100MW hyperscale data center electrical to food-grade cold storage refrigeration. Complexity is the baseline.</p>
           </div>
           <div class="paper2-bg p-7">
             <div class="text-3xl safety mb-3">→</div>
@@ -1051,6 +1060,66 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ======= SAFETY STATS ======= -->
+<section id="safety" class="ink-bg text-white py-20 lg:py-24 border-t border-line relative overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-30"></div>
+  <div class="relative max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-12 gap-10 mb-10">
+      <div class="lg:col-span-5">
+        <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-4">// Safety &amp; Compliance</div>
+        <h2 class="display text-3xl lg:text-4xl font-extrabold leading-tight">
+          Safety is the <span class="underline-safety">first qualification</span><br>on every job.
+        </h2>
+      </div>
+      <div class="lg:col-span-6 lg:col-start-7 flex items-end">
+        <p class="text-white/70 leading-relaxed">
+          Hyperscale, industrial and mission-critical GCs filter on EMR before they read scope. Oak Shield&rsquo;s safety record is built to meet that filter — not to brag about it after.
+        </p>
+      </div>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-px paper-bg/5 border border-line">
+      <div class="ink2-bg p-7">
+        <div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">EMR</div>
+        <div class="text-4xl font-extrabold num-display mb-1">0.85</div>
+        <div class="text-xs text-white/55">Below 1.00 industry threshold · trending down</div>
+      </div>
+      <div class="ink2-bg p-7">
+        <div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">DART Rate</div>
+        <div class="text-4xl font-extrabold num-display mb-1">0.0</div>
+        <div class="text-xs text-white/55">Days Away / Restricted / Transferred · 3-yr</div>
+      </div>
+      <div class="ink2-bg p-7">
+        <div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">OSHA-10 Field</div>
+        <div class="text-4xl font-extrabold num-display mb-1">100<span class="text-2xl">%</span></div>
+        <div class="text-xs text-white/55">100% field crew · 3-year recertification</div>
+      </div>
+      <div class="ink2-bg p-7">
+        <div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">OSHA-30 Mgmt</div>
+        <div class="text-4xl font-extrabold num-display mb-1">100<span class="text-2xl">%</span></div>
+        <div class="text-xs text-white/55">100% management · TRIR 2.2 (industry parity)</div>
+      </div>
+    </div>
+    <div class="mt-8 grid sm:grid-cols-3 gap-px paper-bg/5 border border-line">
+      <div class="ink2-bg p-6">
+        <div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-2">Texas HVAC</div>
+        <div class="text-base font-extrabold">TACL #111021 · Class A</div>
+        <div class="text-xs text-white/55 mt-1">Unlimited tonnage</div>
+      </div>
+      <div class="ink2-bg p-6">
+        <div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-2">Texas Electrical</div>
+        <div class="text-base font-extrabold">TECL #TACLA111021C</div>
+        <div class="text-xs text-white/55 mt-1">Designated Master: Xinchao Xi</div>
+      </div>
+      <div class="ink2-bg p-6">
+        <div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-2">EPA Section 608</div>
+        <div class="text-base font-extrabold">7 / 15 Universal · Type II</div>
+        <div class="text-xs text-white/55 mt-1">High-pressure commercial certified</div>
+      </div>
+    </div>
+    <p class="mt-6 text-xs text-white/40 leading-relaxed">Complete pre-qualification packages — license certificates, COI, EMR letter, bonding capacity, written safety program and project references — provided on request.</p>
   </div>
 </section>
 
@@ -1185,8 +1254,13 @@
           </div>
         </div>
         <p class="text-sm text-white/60 leading-relaxed">
-          Texas-based MEP contractor delivering HVAC, refrigeration, electrical and plumbing for commercial and industrial projects.
+          Texas-based commercial &amp; industrial MEP contractor — self-perform HVAC, refrigeration and electrical; plumbing through licensed TSBPE partner under unified Oak Shield project management.
         </p>
+        <div class="mt-5 text-xs text-white/50 space-y-1 font-mono">
+          <div>1819 First Oaks St #180</div>
+          <div>Richmond, TX 77406 (Houston Metro)</div>
+          <div>Texas Statewide service</div>
+        </div>
       </div>
       <div class="lg:col-span-2">
         <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-4">Services</div>
@@ -1212,16 +1286,17 @@
         <div class="space-y-2 text-sm text-white/70">
           <div><a href="tel:+17138150552" class="hover:text-white">713-815-0552</a></div>
           <div><a href="mailto:info@oakshieldservice.com" class="hover:text-white">info@oakshieldservice.com</a></div>
-          <div class="text-white/50">Houston · Dallas · Austin · San Antonio</div>
+          <div class="text-white/50">Houston Metro · Dallas · Austin · San Antonio</div>
           <div class="text-white/50 text-xs mt-3">Mon – Fri · 7:00am – 6:00pm CST<br>Project coordination 24/7 during active builds</div>
         </div>
       </div>
     </div>
     <div class="border-t border-line pt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs text-white/45">
       <div>© 2026 Oak Shield Service LLC. All rights reserved.</div>
-      <div class="flex gap-5">
-        <span>TACL # — TBD</span>
-        <span>TECL # — TBD</span>
+      <div class="flex flex-wrap gap-5 font-mono">
+        <span>TACL # 111021 (Class A)</span>
+        <span>TECL # TACLA111021C</span>
+        <span>EMR 0.85 · DART 0</span>
         <span>Bonded · Insured</span>
       </div>
     </div>
@@ -1234,16 +1309,25 @@
   "@type": ["LocalBusiness", "HVACBusiness", "ElectricalContractor", "Plumber"],
   "@id": "https://oakshieldservice.com/#org",
   "name": "Oak Shield Service LLC",
-  "description": "Texas-based commercial & industrial MEP contractor — HVAC, refrigeration, electrical and plumbing for data centers, hospitality, cold storage, and big-box retail.",
+  "description": "Texas-based commercial & industrial MEP contractor — HVAC, refrigeration, electrical and plumbing partner delivery for data centers, hospitality, cold storage, and big-box retail.",
   "url": "https://oakshieldservice.com",
   "telephone": "+1-713-815-0552",
   "email": "info@oakshieldservice.com",
+  "foundingDate": "2016",
+  "founder": { "@type": "Person", "name": "Xinchao Xi" },
+  "numberOfEmployees": { "@type": "QuantitativeValue", "value": 30 },
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "Houston",
+    "streetAddress": "1819 First Oaks St #180",
+    "addressLocality": "Richmond",
     "addressRegion": "TX",
+    "postalCode": "77406",
     "addressCountry": "US"
   },
+  "hasCredential": [
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "TACL #111021 (Class A)" },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "TECL #TACLA111021C" }
+  ],
   "areaServed": [
     { "@type": "State", "name": "Texas" },
     { "@type": "City", "name": "Houston" },
@@ -1254,7 +1338,7 @@
   "knowsAbout": [
     "Commercial HVAC",
     "Industrial Refrigeration",
-    "Mission-Critical Electrical",
+    "Medium-Voltage Electrical",
     "Data Center MEP",
     "Cold Storage",
     "Hotel MEP",

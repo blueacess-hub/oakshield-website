@@ -28,82 +28,82 @@ def write(path: str, content: str) -> None:
 def build_services():
     body = head(
         title="Commercial & Industrial MEP Services in Texas | Oak Shield Service",
-        description="Self-performed commercial HVAC, industrial refrigeration, electrical and plumbing for Texas projects. Single point of accountability across all four trades.",
+        description="Self-perform commercial HVAC, industrial refrigeration and electrical; plumbing through licensed TSBPE partner — single point of accountability across all four trades for Texas projects.",
         canonical="https://oakshieldservice.com/services.html",
     ) + announcement_bar() + header(active="services") + breadcrumb([
         ("Home", "index.html"), ("Services", "")
     ]) + page_hero(
-        eyebrow="// Services · Self-Performed MEP",
+        eyebrow="// Services · Integrated MEP Delivery",
         title_html='Four trades. One responsibility chain.<br><span class="underline-safety">Mechanical, Electrical, Refrigeration &amp; Plumbing.</span>',
-        subtitle="GCs and owners across Texas trust Oak Shield because all four trades flow through one estimating desk, one project manager, and one safety program — eliminating finger-pointing on RFIs, schedule slips and inspection holds.",
+        subtitle="GCs and owners across Texas trust Oak Shield because all four trades flow through one estimating desk, one project manager, and one safety program — Oak Shield self-performs HVAC, refrigeration and electrical; plumbing is delivered through our licensed TSBPE partner under unified Oak Shield project management.",
         image_path="../assets/generated/hero_mep_corridor.png",
-        image_alt="Industrial MEP corridor — Oak Shield Service self-performed scope",
+        image_alt="Industrial MEP corridor — Oak Shield Service integrated MEP scope",
     )
 
     # Trade cards (deeper than home page)
     trades = [
         ("hvac", "01", "HVAC", "Commercial & Industrial",
-         "Mechanical scope on new construction and retrofits across data centers, hospitality, cold-storage facilities and big-box retail. We own the airside from first equipment cut sheet to inspection sign-off.",
+         "Mechanical scope on new construction and retrofits across data centers, hospitality, cold-storage facilities and big-box retail. We own the airside from first equipment cut sheet to inspection sign-off — TACL #111021 (Class A · unlimited tonnage).",
          [
             "Air distribution &amp; ductwork (sheetmetal trade-coordinated)",
             "Packaged rooftop units &amp; split systems",
             "VRF / VRV multi-zone systems",
             "Air handlers &amp; mechanical room build-outs",
             "Hydronic piping (chilled &amp; hot water)",
-            "Test &amp; balance coordination",
+            "Test &amp; balance coordination (NEBB / AABC certified specialists)",
             "Equipment setting &amp; rigging",
             "Mechanical retrofits in active facilities",
          ],
-         "Costco Business Center · Stafford TX",
+         "National Warehouse-Club Build · Stafford TX",
          "Equipment setting, ductwork, RTU coordination on a national-prototype big-box facility.",
          "project_costco_rooftop.png", "markets/big-box-retail.html"),
 
         ("refrigeration", "02", "Refrigeration & Cold Storage", "Food-grade & Industrial",
-         "Walk-in coolers, freezers, process refrigeration and temperature-controlled storage built to food-grade and industrial code. We coordinate insulation, vapor barrier and refrigeration piping as one engineered system — not three uncoordinated subs.",
+         "Walk-in coolers, freezers, process refrigeration and temperature-controlled storage built to food-grade and industrial code. 7 of our 15 HVAC / refrigeration techs hold EPA Section 608 Type II (high-pressure commercial). We coordinate insulation, vapor barrier and refrigeration piping as one engineered system — not three uncoordinated subs.",
          [
             "Walk-in coolers &amp; freezers (custom &amp; modular)",
-            "Process refrigeration piping",
+            "Process refrigeration piping (HFC / HFO / freon)",
             "Refrigeration insulation &amp; vapor barrier coordination",
             "Glycol &amp; secondary loop systems",
             "Compressor racks &amp; mechanical equipment rooms",
             "Blast freezing &amp; flash chill applications",
             "Temperature mapping &amp; commissioning",
-            "Energy recovery (heat reclaim, condenser water, desuperheater integration)",
+            "Ammonia (NH3) coordination through IIAR-certified partner",
          ],
          "OCM Mushroom Cold Storage · Texas",
          "Industrial cold-storage facility refrigeration: walk-ins, piping, insulation and full system commissioning.",
          "project_ocm_coldstorage.png", "markets/cold-storage.html"),
 
-        ("electrical", "03", "Electrical", "Mission-Critical · Distribution · Controls",
-         "Power distribution, equipment connections, control wiring, low-voltage and mission-critical systems for data centers, manufacturing and large commercial. Self-perform from utility tie-in down to terminal device.",
+        ("electrical", "03", "Electrical", "Medium-Voltage · Distribution · Controls",
+         "Power distribution, equipment connections, control wiring and low-voltage systems for data centers, manufacturing and large commercial. We self-perform up to 25kV medium voltage with 15 MV-trained electricians on staff. TECL #TACLA111021C · Designated Master Electrician Xinchao Xi.",
          [
-            "Medium- &amp; low-voltage distribution",
-            "Mission-critical UPS &amp; generator integration",
-            "Switchgear &amp; PDU installation",
+            "Medium-voltage distribution up to 25kV",
+            "UPS install &amp; power feed (Eaton &amp; ABB authorized partner)",
+            "Switchgear: Power Module set + tie-in &amp; stick-built assembly",
+            "PDU / RPP installation &amp; integration",
             "Equipment power &amp; controls connections",
             "Cable tray / conduit infrastructure",
             "Lighting &amp; lighting controls",
-            "Fire alarm &amp; life-safety systems coordination",
-            "Inspection-driven energization sequencing",
+            "Fire alarm raceway / conduit (detection via licensed FAL partner)",
          ],
-         "NVIDIA Data Center · Dallas Area",
-         "Mission-critical electrical subcontractor: power distribution, equipment connections, full system coordination.",
+         "Hyperscale AI Tenant · Dallas Area",
+         "Mission-critical electrical subcontractor on a ≥100MW hyperscale facility: power distribution, equipment connections, full system coordination.",
          "project_nvidia_dc.png", "markets/data-centers.html"),
 
-        ("plumbing", "04", "Plumbing", "Commercial & Process",
-         "Domestic water, sanitary, storm, and process plumbing as part of integrated MEP delivery. We own coordination handoffs with mechanical, electrical and structural to avoid clash-detection rework.",
+        ("plumbing", "04", "Plumbing", "Through Licensed TSBPE Partner",
+         "Domestic water, sanitary, storm and process plumbing delivered through Oak Shield&rsquo;s licensed TSBPE plumbing partner under unified Oak Shield project management. The partner brings Master Plumber license and the full TSBPE-regulated scope; Oak Shield owns the coordination chain so the GC sees one schedule, one PM and one warranty desk.",
          [
             "Domestic hot &amp; cold water distribution",
             "Sanitary &amp; storm drainage",
             "Backflow prevention (BPAT-certified testing) &amp; water treatment",
             "Process plumbing for industrial &amp; food-grade",
-            "Medical / lab gas (where applicable)",
             "Fixture trim &amp; final connections",
             "Riser coordination through multi-story builds",
-            "Pre-fab assemblies for schedule compression",
+            "Constructibility review (mechanical / structural / structural clash)",
+            "Pre-fab assemblies through partner suppliers",
          ],
          "Blossom Hotel Houston · Houston TX",
-         "Full-service hotel MEP: integrated mechanical, electrical and plumbing across guest rooms, kitchen and back-of-house.",
+         "Full-service hotel MEP: integrated mechanical, electrical and partner-delivered plumbing across guest rooms, kitchen and back-of-house.",
          "project_blossom_hotel.png", "markets/hospitality.html"),
     ]
 
@@ -272,7 +272,7 @@ def build_projects():
 def build_company():
     body = head(
         title="About Oak Shield Service | Texas-Based MEP Contractor",
-        description="Houston-based commercial & industrial MEP contractor. Self-performed HVAC, refrigeration, electrical and plumbing. Licensed in Texas, insured and bonded.",
+        description="Houston-metro commercial & industrial MEP contractor founded 2016. Self-perform HVAC, refrigeration and electrical; plumbing through licensed TSBPE partner. EMR 0.85 · DART 0 · OSHA-10 100% field coverage.",
         canonical="https://oakshieldservice.com/company.html",
     ) + announcement_bar() + header(active="company") + breadcrumb([
         ("Home", "index.html"), ("Company", "")
@@ -298,10 +298,10 @@ def build_company():
           The biggest source of cost and schedule risk on commercial and industrial projects isn&rsquo;t the work itself — it&rsquo;s the seams between the trades. RFIs that bounce between mechanical and electrical, refrigeration scope that gets re-designed once insulation arrives, plumbing risers that conflict with ductwork after sheetmetal is hung.
         </p>
         <p>
-          Oak Shield was built to close those seams. We self-perform all four MEP disciplines under one estimating desk, one project manager, and one safety program. GCs get fewer subs to manage, owners get one warranty contact, and inspectors get one coordination story instead of four.
+          Founded in 2016, Oak Shield was built to close those seams. We self-perform HVAC, refrigeration and electrical under one estimating desk, one project manager, and one safety program — with plumbing delivered through our licensed TSBPE partner under the same Oak Shield project management. GCs get fewer subs to manage, owners get one warranty contact, and inspectors get one coordination story instead of four.
         </p>
         <p>
-          We&rsquo;re Texas-based and Texas-licensed. We work where our crews can drive home — Houston, Dallas, Austin, San Antonio, and the I-10 / I-35 / I-45 build corridors connecting them. No travel mark-ups, no per-diem hidden in the bid sheet.
+          We&rsquo;re Texas-based and Texas-licensed. Our home office is in Richmond (Houston Metro) and we work where our crews can drive home — Houston, Dallas, Austin, San Antonio, and the I-10 / I-35 / I-45 build corridors connecting them. No travel mark-ups, no per-diem hidden in the bid sheet.
         </p>
       </div>
     </div>
@@ -309,14 +309,91 @@ def build_company():
       <div class="ink-bg text-white p-8 lg:p-10">
         <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-6">// Quick Facts</div>
         <dl class="space-y-5 text-sm">
-          <div class="flex justify-between gap-6 pb-4 border-b border-line"><dt class="text-white/55">Headquarters</dt><dd class="text-white font-bold text-right">Houston, TX</dd></div>
+          <div class="flex justify-between gap-6 pb-4 border-b border-line"><dt class="text-white/55">Headquarters</dt><dd class="text-white font-bold text-right">Richmond, TX (Houston Metro)</dd></div>
+          <div class="flex justify-between gap-6 pb-4 border-b border-line"><dt class="text-white/55">Founded</dt><dd class="text-white font-bold text-right">2016</dd></div>
+          <div class="flex justify-between gap-6 pb-4 border-b border-line"><dt class="text-white/55">Team</dt><dd class="text-white font-bold text-right">30 Total · 25 Field · 5 Office</dd></div>
           <div class="flex justify-between gap-6 pb-4 border-b border-line"><dt class="text-white/55">Service Area</dt><dd class="text-white font-bold text-right">Texas Statewide</dd></div>
-          <div class="flex justify-between gap-6 pb-4 border-b border-line"><dt class="text-white/55">Self-Performed Trades</dt><dd class="text-white font-bold text-right">HVAC · Refrig · Electrical · Plumbing</dd></div>
+          <div class="flex justify-between gap-6 pb-4 border-b border-line"><dt class="text-white/55">Trade Delivery</dt><dd class="text-white font-bold text-right">HVAC · Refrig · Electrical (self-perform) · Plumbing (TSBPE partner)</dd></div>
           <div class="flex justify-between gap-6 pb-4 border-b border-line"><dt class="text-white/55">Client Mix</dt><dd class="text-white font-bold text-right">GC / Owner / Design Teams</dd></div>
           <div class="flex justify-between gap-6"><dt class="text-white/55">Verticals</dt><dd class="text-white font-bold text-right">Data Center · Hospitality · Cold Storage · Retail · Industrial</dd></div>
         </dl>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP -->
+<section class="paper2-bg py-20 lg:py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-4">// Leadership</div>
+    <h2 class="display text-3xl lg:text-4xl font-extrabold leading-tight mb-10">The people who own the commitment.</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white border border-line/15 p-7 lg:p-9 flex gap-6">
+        <div class="flex-shrink-0 w-20 h-20 rounded-full bg-gradient-to-br from-[#1F2A3F] to-[#0B1220] flex items-center justify-center">
+          <svg class="w-10 h-10 text-white/60" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+        </div>
+        <div>
+          <div class="text-[10px] safety font-bold uppercase tracking-[0.2em] mb-2">Founder &amp; President</div>
+          <div class="text-2xl font-extrabold mb-1">Xinchao Xi</div>
+          <div class="text-sm text-ink/55 mb-3 font-mono">17 years · MEP &amp; Mission-Critical Construction</div>
+          <p class="text-sm text-ink/70 leading-relaxed">Designated Master Electrician on the company TECL. Founded Oak Shield in 2016 to deliver the integrated, single-point-of-accountability MEP delivery model that complex commercial and industrial GCs ask for.</p>
+        </div>
+      </div>
+      <div class="bg-white border border-line/15 p-7 lg:p-9 flex gap-6">
+        <div class="flex-shrink-0 w-20 h-20 rounded-full bg-gradient-to-br from-[#1F2A3F] to-[#0B1220] flex items-center justify-center">
+          <svg class="w-10 h-10 text-white/60" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+        </div>
+        <div>
+          <div class="text-[10px] safety font-bold uppercase tracking-[0.2em] mb-2">VP of Operations</div>
+          <div class="text-2xl font-extrabold mb-1">Ben</div>
+          <div class="text-sm text-ink/55 mb-3 font-mono">Field Operations &amp; Project Delivery</div>
+          <p class="text-sm text-ink/70 leading-relaxed">Runs day-to-day field operations across the active project portfolio — schedule, crew deployment, safety adherence and GC interface across all four trades.</p>
+        </div>
+      </div>
+    </div>
+    <p class="mt-8 text-xs text-ink/50">Estimating Manager, Safety Director and Senior Project Managers — full leadership team disclosed on prequalification request.</p>
+  </div>
+</section>
+
+<!-- SAFETY STATS -->
+<section class="paper-bg py-20 lg:py-24 border-t border-line/10">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-12 gap-10 mb-10">
+      <div class="lg:col-span-5">
+        <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-4">// Safety Performance</div>
+        <h2 class="display text-3xl lg:text-4xl font-extrabold leading-tight">
+          Safety is the <span class="underline-safety">first qualification</span> on every job.
+        </h2>
+      </div>
+      <div class="lg:col-span-6 lg:col-start-7 flex items-end">
+        <p class="text-ink/70 leading-relaxed">
+          Hyperscale, industrial and mission-critical GCs filter on EMR before they read scope. Oak Shield&rsquo;s safety record is built to meet that filter — not to brag about it after.
+        </p>
+      </div>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-px ink-bg/5 border border-line/15">
+      <div class="bg-white p-7">
+        <div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">EMR</div>
+        <div class="text-4xl font-extrabold num-display mb-1">0.85</div>
+        <div class="text-xs text-ink/55">Below 1.00 industry threshold &middot; trending downward</div>
+      </div>
+      <div class="bg-white p-7">
+        <div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">DART Rate</div>
+        <div class="text-4xl font-extrabold num-display mb-1">0.0</div>
+        <div class="text-xs text-ink/55">Days Away / Restricted / Transferred &middot; recent 3-yr</div>
+      </div>
+      <div class="bg-white p-7">
+        <div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">OSHA-10 Field</div>
+        <div class="text-4xl font-extrabold num-display mb-1">100<span class="text-2xl">%</span></div>
+        <div class="text-xs text-ink/55">100% field crew &middot; 3-year recertification cycle</div>
+      </div>
+      <div class="bg-white p-7">
+        <div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">OSHA-30 Mgmt</div>
+        <div class="text-4xl font-extrabold num-display mb-1">100<span class="text-2xl">%</span></div>
+        <div class="text-xs text-ink/55">100% management &middot; TRIR 2.2 (industry parity)</div>
+      </div>
+    </div>
+    <p class="mt-6 text-xs text-ink/45">Full safety program documentation, written policies, EMR letter and incident logs available with prequalification package.</p>
   </div>
 </section>
 
@@ -326,7 +403,7 @@ def build_company():
   <div class="relative max-w-7xl mx-auto px-6">
     <div class="grid lg:grid-cols-12 gap-10 mb-12">
       <div class="lg:col-span-5">
-        <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-4">// Compliance &amp; Safety</div>
+        <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-4">// Compliance &amp; Licensing</div>
         <h2 class="display text-3xl lg:text-4xl font-extrabold leading-tight">
           Licensed, insured, bonded —<br>
           <span class="underline-safety">prequalification-ready.</span>
@@ -334,18 +411,22 @@ def build_company():
       </div>
       <div class="lg:col-span-6 lg:col-start-7 flex items-end">
         <p class="text-white/70 leading-relaxed">
-          We maintain the credentials and safety record GCs require to bring us onto enterprise and mission-critical work. Specific certificate documents available on request as part of prequalification.
+          We maintain the credentials GCs require to bring us onto enterprise and mission-critical work. Complete pre-qualification packages — license certificates, COIs, EMR letter, bonding capacity, safety program — provided on request.
         </p>
       </div>
     </div>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-px paper-bg/5 border border-line">
-      <div class="ink2-bg p-7"><div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">Texas Licensing</div><div class="text-2xl font-extrabold mb-1">TACL &amp; TECL</div><div class="text-xs text-white/55">HVAC + Electrical Master · numbers on prequal</div></div>
+      <div class="ink2-bg p-7"><div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">Texas HVAC</div><div class="text-2xl font-extrabold mb-1">TACL #111021</div><div class="text-xs text-white/55">Class A · Unlimited tonnage</div></div>
+      <div class="ink2-bg p-7"><div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">Texas Electrical</div><div class="text-2xl font-extrabold mb-1">TECL #TACLA111021C</div><div class="text-xs text-white/55">Designated Master: Xinchao Xi</div></div>
+      <div class="ink2-bg p-7"><div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">EPA 608</div><div class="text-2xl font-extrabold mb-1">7 / 15 Universal</div><div class="text-xs text-white/55">Type II High-Pressure Commercial certified techs</div></div>
+      <div class="ink2-bg p-7"><div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">Plumbing</div><div class="text-2xl font-extrabold mb-1">TSBPE Partner</div><div class="text-xs text-white/55">Licensed plumbing partner under Oak Shield PM</div></div>
       <div class="ink2-bg p-7"><div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">Insurance</div><div class="text-2xl font-extrabold mb-1">GL · WC · Auto</div><div class="text-xs text-white/55">Certificates issued per project requirements</div></div>
+      <div class="ink2-bg p-7"><div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">Pollution Liability</div><div class="text-2xl font-extrabold mb-1">CPL $1M</div><div class="text-xs text-white/55">Refrigerant scope coverage (excl. NH3)</div></div>
       <div class="ink2-bg p-7"><div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">Bonding</div><div class="text-2xl font-extrabold mb-1">Surety-backed</div><div class="text-xs text-white/55">Single &amp; aggregate capacity on request</div></div>
-      <div class="ink2-bg p-7"><div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">Prequalification</div><div class="text-2xl font-extrabold mb-1">Ready</div><div class="text-xs text-white/55">ISNetworld &middot; Avetta &middot; Veriforce capable</div></div>
+      <div class="ink2-bg p-7"><div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">Prequalification</div><div class="text-2xl font-extrabold mb-1">On Request</div><div class="text-xs text-white/55">Complete pre-qualification packages on request</div></div>
     </div>
-    <p class="mt-5 text-xs text-white/40 leading-relaxed">Full prequalification package — license numbers, COI, EMR detail, bonding capacity, safety program, and project references — available via the Capability Statement (instant) or Prequalification Package (within 1 business day).</p>
+    <p class="mt-5 text-xs text-white/40 leading-relaxed">Full prequalification package — license certificates, COI, EMR letter, bonding capacity, safety program, and project references — available via the Capability Statement (instant) or Prequalification Package (within 1 business day).</p>
 
     <div class="mt-10 ink2-bg border border-line p-7 lg:p-8 grid lg:grid-cols-12 gap-6 items-center">
       <div class="lg:col-span-8">
@@ -416,7 +497,7 @@ def build_contact():
       <div class="border-t border-line pt-6">
         <div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">Service Area</div>
         <div class="text-sm text-white/85 font-bold mb-1">Texas Statewide</div>
-        <div class="text-xs text-white/55 leading-relaxed">Headquartered in Houston · Active crews across Houston, Dallas, Austin, San Antonio &amp; the build corridors between.</div>
+        <div class="text-xs text-white/55 leading-relaxed">Office in Richmond, TX (Houston Metro) · Active crews across Houston, Dallas, Austin, San Antonio &amp; the build corridors between.</div>
       </div>
     </div>
 
@@ -567,14 +648,15 @@ def build_contact():
       <p class="text-sm text-white/55">For urgent project coordination after hours, contact your assigned PM directly.</p>
     </div>
     <div class="ink2-bg p-7">
-      <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-3">Headquarters</div>
-      <div class="text-base font-bold mb-2">Houston, TX</div>
-      <p class="text-sm text-white/55">Specific street address &amp; mailing details provided on request as part of prequalification.</p>
+      <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-3">Office &amp; Operations</div>
+      <div class="text-base font-bold mb-1">1819 First Oaks St #180</div>
+      <div class="text-sm text-white/85 mb-2">Richmond, TX 77406 (Houston Metro)</div>
+      <p class="text-sm text-white/55">Commercial office plus warehouse / yard for staging, equipment and pre-fab handoff. Walk-ins by appointment.</p>
     </div>
     <div class="ink2-bg p-7">
       <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-3">Crew Coverage</div>
       <div class="text-base font-bold mb-2">4 Major Markets + Build Corridors</div>
-      <p class="text-sm text-white/55">Houston (HQ) · Dallas/Fort Worth · Austin · San Antonio + I-10, I-35, I-45 corridors. For projects outside these markets, ask us about partnered execution.</p>
+      <p class="text-sm text-white/55">Houston Metro (HQ) · Dallas/Fort Worth · Austin · San Antonio + I-10, I-35, I-45 corridors. For projects outside these markets, ask us about partnered execution.</p>
     </div>
   </div>
 </section>
@@ -724,28 +806,28 @@ def build_data_centers():
         market_name="Data Centers",
         hero_image="market_data_center.png",
         hero_alt="Hyperscale data center exterior in Texas at sunset — outdoor chillers, transformer yard and substation",
-        title_h1='Mission-critical electrical &amp; mechanical for <span class="underline-safety">Texas data centers.</span>',
-        hero_subtitle="Texas is the new center of gravity for AI / HPC build-outs — from Stargate Abilene to Meta and Google expansions across DFW. Oak Shield delivers self-performed mission-critical electrical and mechanical scope for hyperscale, colo, and edge data center facilities.",
-        intro_paragraph="Mission-critical builds don&rsquo;t reward marketing — they reward partners who&rsquo;ve passed the inspections and sequenced live energization at scale. Our NVIDIA-supporting build in Dallas is that experience. We bring it to new hyperscale and colo work across Texas, with one trade partner for power distribution and mechanical integration instead of two finger-pointing subs.",
+        title_h1='≥100MW hyperscale electrical &amp; mechanical for <span class="underline-safety">Texas data centers.</span>',
+        hero_subtitle="Texas is the new center of gravity for AI / HPC build-outs — from Stargate Abilene to Meta and Google expansions across DFW. Oak Shield delivers self-performed medium-voltage electrical (up to 25kV) and mechanical scope for hyperscale, colo, and edge data center facilities — with 15 MV-trained electricians on staff.",
+        intro_paragraph="Mission-critical builds don&rsquo;t reward marketing — they reward partners who&rsquo;ve passed the inspections and sequenced live energization at scale. Oak Shield&rsquo;s ≥100MW hyperscale AI tenant build in Dallas (Eaton &amp; ABB authorized for UPS install + power feed) is that experience. We bring it to new hyperscale and colo work across Texas, with one trade partner for power distribution and mechanical integration instead of two finger-pointing subs.",
         core_scope=[
-            "Medium- &amp; low-voltage power distribution",
+            "Medium-voltage distribution up to 25kV (15 MV-trained electricians on staff)",
             "PDU / RPP installation &amp; integration",
-            "Generator &amp; UPS connection scope",
+            "UPS install &amp; power feed (Eaton &amp; ABB authorized partner)",
+            "Switchgear: Power Module set + tie-in &amp; stick-built assembly",
             "Mechanical equipment electrical (chiller, AHU, CRAH)",
             "Cable tray &amp; conduit infrastructure",
-            "Switchgear setting &amp; interconnect",
             "BMS / EPMS coordination &amp; final terminations",
-            "Mission-critical commissioning support",
+            "Inspection-driven energization sequencing",
         ],
         sig_image="project_nvidia_dc.png",
-        sig_title="NVIDIA Data Center · Dallas",
-        sig_loc="Dallas Area, TX · Phase 02",
+        sig_title="Hyperscale AI Tenant · Dallas Area",
+        sig_loc="Dallas Area, TX · ≥100MW IT Load",
         sig_role="Electrical Subcontractor",
-        sig_vert="AI / HPC Hyperscale Data Center",
-        sig_desc="Self-performed electrical scope including power distribution, mechanical equipment connections, and inspection-driven energization sequencing on a hyperscale facility supporting AI and HPC workloads.",
+        sig_vert="AI / HPC Hyperscale Data Center (≥100MW)",
+        sig_desc="Electrical subcontractor on a Dallas-area hyperscale data center supporting AI / HPC tenant workloads at ≥100MW IT load. Self-performed electrical scope including medium-voltage distribution, UPS install &amp; power feed (Eaton / ABB authorized), and inspection-driven energization sequencing.",
         sig_bullets=[
-            "Power distribution &amp; equipment electrical scope",
-            "System coordination across construction phases",
+            "Medium-voltage distribution &amp; switchgear scope",
+            "UPS install + power feed (Eaton &amp; ABB authorized)",
             "Mission-critical energization sequencing",
             "Mechanical &amp; cooling equipment connection",
         ],
@@ -763,16 +845,16 @@ def build_data_centers():
         ],
         faqs=[
             ("Do you perform mission-critical electrical for AI / hyperscale data centers?",
-             "Yes. Our Dallas-area NVIDIA-supporting build was a hyperscale-class electrical scope: power distribution, equipment connections, and inspection-coordinated energization. We extend that capability across new AI / HPC, colo, and edge data center work throughout Texas."),
+             "Yes. Our Dallas-area hyperscale AI tenant build (≥100MW IT load) was a hyperscale-class electrical scope: medium-voltage distribution up to 25kV, UPS install &amp; power feed (Eaton &amp; ABB authorized), switchgear set + tie-in, and inspection-coordinated energization. We extend that capability across new AI / HPC, colo, and edge data center work throughout Texas."),
             ("Can you self-perform both mechanical and electrical at the same DC site?",
-             "Yes — that's a core reason GCs and owners hire us. Combining mechanical (CRAH, AHU, chiller integration) and electrical (PDU, switchgear, generator interconnect) under one trade partner collapses the multi-trade RFI loop and shortens commissioning."),
+             "Yes — that's a core reason GCs and owners hire us. Combining mechanical (CRAH, AHU, chiller integration) and electrical (PDU, switchgear, UPS power feed, generator interconnect) under one trade partner collapses the multi-trade RFI loop and shortens commissioning. With 15 MV-trained electricians and EPA 608 certified refrigeration technicians on staff, we run both scopes in-house."),
             ("Are you prequalified on major data center GCs and platforms?",
-             "We carry the licenses, insurance limits, and safety program needed for prequalification on enterprise data center GCs. Specific platform compatibility (ISNetworld, Avetta, Veriforce) and certificate documents available on request as part of prequalification."),
+             "We carry the licenses (TACL #111021 Class A · TECL #TACLA111021C), insurance, EMR 0.85 safety record, and 100% OSHA-10 / OSHA-30 coverage GCs require. Complete pre-qualification packages — including license certificates, COIs, EMR letter, bonding capacity and project references — provided on request."),
             ("Where in Texas can you support data center builds?",
              "Statewide. We staff active crews across Houston, Dallas / Fort Worth, Austin, San Antonio, and the Abilene / DFW build corridors where AI hyperscale activity is concentrated."),
         ],
         meta_title="Data Center Electrical Contractor in Texas | Oak Shield Service",
-        meta_desc="Mission-critical electrical & mechanical for AI, HPC, hyperscale and colo data centers across Texas. NVIDIA Dallas data center subcontractor. Power distribution, equipment connections, system coordination.",
+        meta_desc="≥100MW hyperscale electrical & mechanical for AI, HPC and colo data centers across Texas. Medium-voltage up to 25kV. Eaton & ABB authorized UPS partner. Dallas hyperscale reference build.",
     )
 
 
@@ -783,8 +865,8 @@ def build_hospitality():
         hero_image="market_hospitality.png",
         hero_alt="Hotel mechanical penthouse overlooking Houston skyline at dusk — chilled water plant and color-coded MEP piping",
         title_h1='Full MEP for <span class="underline-safety">Texas hotels and hospitality builds.</span>',
-        hero_subtitle="From flagship downtown hotels to mid-scale select-service builds, hospitality projects demand integrated mechanical, electrical and plumbing executed under guest-facing schedule pressure. Oak Shield self-performs all four trades — single point of accountability from kickoff to final guest-room punch.",
-        intro_paragraph="Hospitality schedules don&rsquo;t slip without missing a stabilized opening date. Oak Shield runs all four MEP trades under one PM — guest-tower risers, kitchen plumbing, life-safety, BMS integration — so the GC manages one warranty desk instead of four. Blossom Hotel Houston is the working template.",
+        hero_subtitle="From flagship downtown hotels to mid-scale select-service builds, hospitality projects demand integrated mechanical, electrical and plumbing executed under guest-facing schedule pressure. Oak Shield self-performs HVAC, refrigeration and electrical and runs plumbing through our licensed TSBPE partner — single point of accountability from kickoff to final guest-room punch.",
+        intro_paragraph="Hospitality schedules don&rsquo;t slip without missing a stabilized opening date. Oak Shield runs all four MEP trades under one PM — guest-tower risers, kitchen plumbing, life-safety, BMS integration — so the GC manages one warranty desk instead of four. Our Blossom Hotel Houston build is the working template.",
         core_scope=[
             "Guest tower mechanical (VRF / fan-coil / chilled water)",
             "Public-space air handlers &amp; energy recovery",
@@ -820,8 +902,8 @@ def build_hospitality():
             "select service hotel hvac", "boutique hotel mechanical contractor",
         ],
         faqs=[
-            ("Do you self-perform all four MEP trades on hotel projects?",
-             "Yes. That's specifically why Oak Shield works well on hospitality — guest-tower coordination needs one point of accountability across mechanical, electrical and plumbing. Refrigeration enters the conversation on kitchen and back-of-house scope."),
+            ("Do you cover all four MEP trades on hotel projects?",
+             "Yes. Oak Shield self-performs HVAC, refrigeration and electrical, and runs plumbing through our licensed TSBPE partner under unified Oak Shield project management. Guest-tower coordination still gets one PM, one schedule and one warranty desk — refrigeration enters the conversation on kitchen and back-of-house scope."),
             ("Can you keep schedule with a stabilized hotel opening date?",
              "Yes. Hospitality schedules can't slip without missing reservation windows. We sequence MEP to inspectors and to final guest-room punch — not to ourselves. We pre-fab plumbing risers and electrical assemblies where it compresses schedule."),
             ("What hotel verticals are within your scope?",
@@ -844,16 +926,16 @@ def build_cold_storage():
         hero_alt="Industrial cold storage warehouse aisle with overhead refrigeration coils and arctic blue lighting in Texas",
         title_h1='Food-grade refrigeration &amp; <span class="underline-safety">cold storage build-outs in Texas.</span>',
         hero_subtitle="Texas port-driven cold-chain demand keeps growing — Houston, Laredo and Dallas distribution hubs feed both domestic supply chains and cross-border trade. Oak Shield delivers food-grade walk-in coolers, freezers, process refrigeration and integrated cold-storage MEP for industrial, 3PL and food production facilities.",
-        intro_paragraph="Refrigeration projects fail at the seams between insulation, piping, and structural — not on any single trade. We deliver cold storage as one engineered package, not three uncoordinated subs. OCM Mushroom is the working reference: walk-ins, piping, insulation, controls and commissioning under one self-performed scope.",
+        intro_paragraph="Refrigeration projects fail at the seams between insulation, piping, and structural — not on any single trade. We deliver cold storage as one engineered package, not three uncoordinated subs. 7 of our 15 HVAC / refrigeration techs hold EPA Section 608 Type II (high-pressure commercial). OCM Mushroom is the working reference: walk-ins, piping, insulation, controls and commissioning under one self-performed scope.",
         core_scope=[
             "Walk-in cooler &amp; freezer construction (custom &amp; modular)",
-            "Refrigeration piping (suction, liquid, hot gas)",
+            "Refrigeration piping — HFC / HFO / freon (suction, liquid, hot gas)",
             "Vapor barrier &amp; insulation coordination",
             "Compressor rack &amp; mechanical equipment rooms",
             "Glycol / secondary loop systems",
             "Process refrigeration &amp; blast freezing",
             "Refrigeration controls &amp; monitoring",
-            "Commissioning &amp; temperature mapping",
+            "Ammonia (NH3) coordination through IIAR-certified partner",
         ],
         sig_image="project_ocm_coldstorage.png",
         sig_title="OCM Mushroom Cold Storage Facility",
@@ -883,7 +965,7 @@ def build_cold_storage():
             ("Do you handle food-grade walk-in cooler and freezer build-outs?",
              "Yes — that's exactly the OCM Mushroom scope. Food-grade construction means tight insulation / vapor barrier coordination, sanitary-finish materials, and commissioning to temperature mapping requirements. We self-perform that scope under one contract."),
             ("Can you do ammonia refrigeration as well as freon / HFC?",
-             "We routinely deliver freon / HFC / HFO refrigeration on industrial cold storage. For ammonia (anhydrous) systems we carry the qualifications and partner with specialized refrigerant licensing where required. Tell us what your refrigerant strategy is and we'll map a clean execution plan."),
+             "We self-perform freon / HFC / HFO refrigeration on industrial cold storage with EPA 608 Type II certified technicians. For ammonia (NH3 / anhydrous) systems, Oak Shield delivers the work through an IIAR-certified refrigeration partner with PSM-trained crews — Oak Shield owns the MEP coordination &amp; ancillary scope (insulation, structural, electrical) under unified project management. Tell us what your refrigerant strategy is and we'll map a clean execution plan."),
             ("Can you sequence cold-storage scope inside an active food production facility?",
              "Yes. Production-facility refrigeration retrofits demand strict downtime windows, sanitation rules and FDA / USDA inspection awareness. We sequence to production calendars and sanitation requirements."),
             ("Where in Texas do you cover for cold storage work?",
@@ -902,7 +984,7 @@ def build_big_box():
         hero_alt="Aerial view of big-box retail rooftop in Texas with grid of commercial RTU HVAC packaged units at golden hour",
         title_h1='HVAC &amp; refrigeration for <span class="underline-safety">national-prototype retail builds.</span>',
         hero_subtitle="National retail brands run on prototype standards — same RTU schedule, same refrigerated case lineup, same commissioning checklist on every build. Oak Shield delivers HVAC and refrigeration to those exact standards across Texas big-box retail and warehouse-club facilities.",
-        intro_paragraph="National retail brands run on prototype standards — same RTU schedule, same case lineups, same closeout binder on every store. The GC wants no surprises; corporate construction wants the same documentation they got on the last fifteen openings. Oak Shield&rsquo;s Costco Business Center build in Stafford was executed to that exact standard.",
+        intro_paragraph="National retail brands run on prototype standards — same RTU schedule, same case lineups, same closeout binder on every store. The GC wants no surprises; corporate construction wants the same documentation they got on the last fifteen openings. Oak Shield&rsquo;s national warehouse-club build in Stafford was executed to that exact standard.",
         core_scope=[
             "Rooftop unit setting &amp; rigging",
             "Ductwork, registers &amp; air balancing",
@@ -914,11 +996,11 @@ def build_big_box():
             "Prototype-document closeout package",
         ],
         sig_image="project_costco_rooftop.png",
-        sig_title="Costco Business Center · Stafford",
+        sig_title="National Warehouse-Club Prototype · Stafford",
         sig_loc="Stafford, TX",
         sig_role="HVAC Subcontractor",
         sig_vert="Big-Box Warehouse-Club Retail",
-        sig_desc="Equipment setting, ductwork installation and multi-trade coordination on a large-scale national prototype facility — built to Costco&rsquo;s national construction standards and inspection sequencing.",
+        sig_desc="Equipment setting, ductwork installation and multi-trade coordination on a large-scale national prototype warehouse-club facility — built to the brand&rsquo;s national construction standards and inspection sequencing.",
         sig_bullets=[
             "Rooftop unit setting &amp; rigging",
             "Ductwork &amp; air distribution",
@@ -938,7 +1020,7 @@ def build_big_box():
         ],
         faqs=[
             ("Do you build to national-prototype standards?",
-             "Yes. Big-box and warehouse-club brands run on tight prototype documents — same RTU schedule, same case lineups, same closeout binder across every build. Oak Shield&rsquo;s Costco scope was executed to that exact standard."),
+             "Yes. Big-box and warehouse-club brands run on tight prototype documents — same RTU schedule, same case lineups, same closeout binder across every build. Oak Shield&rsquo;s warehouse-club build in Stafford was executed to that exact standard."),
             ("Can you self-perform both HVAC and refrigeration at retail sites?",
              "Yes. Most big-box and grocery-format retail needs both — comfort cooling RTUs plus refrigerated case lineups. Combining the two scopes under one trade partner collapses commissioning timeline."),
             ("Are you set up for multi-site retail rollouts?",
@@ -960,7 +1042,7 @@ def build_industrial():
         hero_image="market_industrial.png",
         hero_alt="Industrial process plant interior in Texas with stainless steel piping, cable trays and overhead MEP coordination zone",
         title_h1='Process &amp; manufacturing MEP — <span class="underline-safety">built for live facilities.</span>',
-        hero_subtitle="Manufacturing, process and industrial builds put MEP under hard rules: production schedules can&rsquo;t slip, downtime windows are short, and inspectors are watching. Oak Shield delivers self-performed mechanical, electrical, refrigeration and plumbing for industrial Texas — sequencing scope around production, not against it.",
+        hero_subtitle="Manufacturing, process and industrial builds put MEP under hard rules: production schedules can&rsquo;t slip, downtime windows are short, and inspectors are watching. Oak Shield self-performs mechanical, electrical and refrigeration scope and runs plumbing through our licensed TSBPE partner — sequencing scope around production, not against it.",
         intro_paragraph="Industrial owners don&rsquo;t need another trade partner who blows production schedules with field surprises. They need MEP sequenced to outage windows, inspections, and sanitation requirements — with one PM authorized to call cross-trade decisions in real time. That&rsquo;s how we work.",
         core_scope=[
             "Process exhaust &amp; ventilation",
@@ -999,8 +1081,8 @@ def build_industrial():
         faqs=[
             ("Can you sequence MEP scope inside an active production facility?",
              "Yes — that&rsquo;s the core of industrial work. We sequence to production calendars, downtime windows and inspection requirements. Pre-fab assemblies are used aggressively to compress field time."),
-            ("Do you self-perform all four MEP trades on industrial sites?",
-             "Yes. Industrial owners specifically benefit from a single point of accountability across mechanical, electrical, plumbing and refrigeration — fewer contracts to manage, fewer warranty contacts, faster commissioning."),
+            ("Do you cover all four MEP trades on industrial sites?",
+             "Yes. Oak Shield self-performs HVAC, refrigeration and electrical, and runs plumbing through our licensed TSBPE partner under unified Oak Shield project management. Industrial owners get a single point of accountability across all four trades — fewer contracts to manage, fewer warranty contacts, faster commissioning."),
             ("What industrial verticals are in scope?",
              "Demonstrated capabilities: food &amp; beverage processing, industrial cold storage. Approached through our 4-trade self-perform model: battery / EV facilities, manufacturing retrofit, plastics, pharma support facilities. Tell us your vertical and we&rsquo;ll map fit honestly — including referring you elsewhere if it&rsquo;s outside our core capability."),
             ("Can you handle process piping and high-amp electrical at the same site?",

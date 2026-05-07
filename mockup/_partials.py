@@ -296,7 +296,7 @@ def cta_band(base: str = "") -> str:
       <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-4">// Next Step</div>
       <h2 class="display text-3xl lg:text-4xl font-extrabold leading-tight">
         Have a project that needs<br>
-        <span class="underline-safety">a self-performing MEP partner?</span>
+        <span class="underline-safety">an integrated MEP partner?</span>
       </h2>
       <p class="mt-5 text-white/70 max-w-xl leading-relaxed">
         Send us your scope, location and target schedule. We respond to qualified RFPs within one business day.
@@ -331,12 +331,12 @@ def footer(base: str = "") -> str:
         </div>
       </div>
       <p class="mt-5 text-sm text-white/65 leading-relaxed max-w-md">
-        Texas-based commercial &amp; industrial MEP contractor — self-performed HVAC, refrigeration, electrical and plumbing for inspection-driven complex projects.
+        Texas-based commercial &amp; industrial MEP contractor — self-perform HVAC, refrigeration and electrical; plumbing through licensed TSBPE partner under unified Oak Shield project management.
       </p>
       <div class="mt-6 text-xs text-white/50 space-y-1 font-mono">
         <div>713-815-0552 · info@oakshieldservice.com</div>
-        <div>Headquartered in Houston, TX · Statewide service</div>
-        <div>TACL # <span class="text-white/35">[pending]</span> · TECL # <span class="text-white/35">[pending]</span></div>
+        <div>1819 First Oaks St #180, Richmond, TX 77406 · Texas Statewide</div>
+        <div>TACL # 111021 (Class A) · TECL # TACLA111021C</div>
       </div>
     </div>
     <div class="md:col-span-3">
@@ -392,16 +392,25 @@ def schema_local_business() -> str:
   "@type": ["LocalBusiness", "HVACBusiness", "ElectricalContractor", "Plumber"],
   "@id": "https://oakshieldservice.com/#org",
   "name": "Oak Shield Service LLC",
-  "description": "Texas-based commercial & industrial MEP contractor — HVAC, refrigeration, electrical and plumbing for data centers, hospitality, cold storage, and big-box retail.",
+  "description": "Texas-based commercial & industrial MEP contractor — HVAC, refrigeration, electrical and plumbing partner delivery for data centers, hospitality, cold storage, and big-box retail.",
   "url": "https://oakshieldservice.com",
   "telephone": "+1-713-815-0552",
   "email": "info@oakshieldservice.com",
+  "foundingDate": "2016",
+  "founder": { "@type": "Person", "name": "Xinchao Xi" },
+  "numberOfEmployees": { "@type": "QuantitativeValue", "value": 30 },
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "Houston",
+    "streetAddress": "1819 First Oaks St #180",
+    "addressLocality": "Richmond",
     "addressRegion": "TX",
+    "postalCode": "77406",
     "addressCountry": "US"
   },
+  "hasCredential": [
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "TACL #111021 (Class A)" },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "TECL #TACLA111021C" }
+  ],
   "areaServed": [
     { "@type": "State", "name": "Texas" },
     { "@type": "City", "name": "Houston" },
@@ -412,7 +421,7 @@ def schema_local_business() -> str:
   "knowsAbout": [
     "Commercial HVAC",
     "Industrial Refrigeration",
-    "Mission-Critical Electrical",
+    "Medium-Voltage Electrical",
     "Data Center MEP",
     "Cold Storage",
     "Hotel MEP",
