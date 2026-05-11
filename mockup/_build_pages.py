@@ -478,19 +478,14 @@ def build_contact():
         <span class="underline-safety">We'll respond in one business day.</span>
       </h1>
       <p class="text-white/75 leading-relaxed mb-10">
-        Use this form for project bids, prequalification submissions, or to request our Capability Statement. For quick scope discussions, call us directly.
+        Use this form for project bids, prequalification submissions, or to request our Capability Statement. Email us directly with scope, drawings or RFI logs.
       </p>
 
       <div class="space-y-5 mb-10">
-        <a href="tel:+17138150552" class="block ink2-bg border border-line p-5 hover:border-safety transition-colors group">
-          <div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-1">// Direct Line</div>
-          <div class="text-2xl font-extrabold group-hover:safety transition-colors">713-815-0552</div>
-          <div class="text-xs text-white/55 mt-1">Estimating desk · weekdays 7 AM – 6 PM CT</div>
-        </a>
         <a href="mailto:info@oakshieldservice.com" class="block ink2-bg border border-line p-5 hover:border-safety transition-colors group">
-          <div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-1">// Email</div>
-          <div class="text-base font-extrabold group-hover:safety transition-colors break-all">info@oakshieldservice.com</div>
-          <div class="text-xs text-white/55 mt-1">Attach drawings, specs, RFI logs as PDF</div>
+          <div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-1">// Estimating Desk</div>
+          <div class="text-xl lg:text-2xl font-extrabold group-hover:safety transition-colors break-all">info@oakshieldservice.com</div>
+          <div class="text-xs text-white/55 mt-1">Weekdays 7 AM – 6 PM CT · Attach drawings, specs, RFI logs as PDF</div>
         </a>
       </div>
 

@@ -154,6 +154,8 @@ def head(title: str, description: str, canonical: str = "", og_image: str = "../
 <title>{title}</title>
 <meta name="description" content="{description}">
 {f'<link rel="canonical" href="{canonical}">' if canonical else ''}
+<link rel="icon" type="image/png" href="{base_path}../assets/brand/favicon.png">
+<link rel="apple-touch-icon" href="{base_path}../assets/brand/oak-shield-logo.png">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{description}">
 <meta property="og:image" content="{og_image}">
@@ -177,11 +179,7 @@ def announcement_bar() -> str:
       <span class="hidden md:inline">Texas-based · Houston · Dallas · Austin · San Antonio</span>
     </div>
     <div class="flex items-center gap-5 text-white/80">
-      <a href="tel:+17138150552" class="flex items-center gap-1.5 hover:text-white">
-        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
-        713-815-0552
-      </a>
-      <a href="mailto:info@oakshieldservice.com" class="hidden sm:flex items-center gap-1.5 hover:text-white">
+      <a href="mailto:info@oakshieldservice.com" class="flex items-center gap-1.5 hover:text-white">
         <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
         info@oakshieldservice.com
       </a>
@@ -198,10 +196,7 @@ def header(active: str = "", base: str = "") -> str:
 <header class="sticky top-0 z-50 ink-bg border-b border-line">
   <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
     <a href="{base}index.html" class="flex items-center gap-3 text-white">
-      <svg class="w-9 h-9" viewBox="0 0 40 40" fill="none">
-        <path d="M20 3 L34 9 V20 C34 28 27 35 20 37 C13 35 6 28 6 20 V9 L20 3 Z" stroke="#E26B2C" stroke-width="2" fill="rgba(226,107,44,0.08)"/>
-        <path d="M14 18 L20 14 L26 18 V26 H22 V21 H18 V26 H14 Z" fill="#E26B2C"/>
-      </svg>
+      <img src="{base}../assets/brand/oak-shield-logo.png" alt="Oak Shield Service logo" width="44" height="44" class="w-11 h-11 shrink-0"/>
       <div class="leading-tight">
         <div class="text-lg font-extrabold tracking-tight">OAK SHIELD</div>
         <div class="text-[10px] uppercase tracking-[0.2em] text-white/50">Commercial · Industrial · MEP</div>
@@ -308,7 +303,7 @@ def cta_band(base: str = "") -> str:
         <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
       </a>
       <a href="{base}contact.html#capability" class="btn-ghost text-white justify-center"><span>Download Capability Statement (PDF)</span></a>
-      <a href="tel:+17138150552" class="text-center text-sm text-white/55 mt-2 font-mono hover:text-white">or call 713-815-0552</a>
+      <a href="mailto:info@oakshieldservice.com" class="text-center text-sm text-white/55 mt-2 font-mono hover:text-white">or email info@oakshieldservice.com</a>
     </div>
   </div>
 </section>
@@ -321,10 +316,7 @@ def footer(base: str = "") -> str:
   <div class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-12 gap-10">
     <div class="md:col-span-5">
       <div class="flex items-center gap-3">
-        <svg class="w-8 h-8" viewBox="0 0 40 40" fill="none">
-          <path d="M20 3 L34 9 V20 C34 28 27 35 20 37 C13 35 6 28 6 20 V9 L20 3 Z" stroke="#E26B2C" stroke-width="2" fill="rgba(226,107,44,0.08)"/>
-          <path d="M14 18 L20 14 L26 18 V26 H22 V21 H18 V26 H14 Z" fill="#E26B2C"/>
-        </svg>
+        <img src="{base}../assets/brand/oak-shield-logo.png" alt="Oak Shield Service logo" width="40" height="40" class="w-10 h-10 shrink-0"/>
         <div>
           <div class="text-base font-extrabold">OAK SHIELD SERVICE LLC</div>
           <div class="text-[10px] uppercase tracking-[0.2em] text-white/50">Commercial · Industrial · MEP Contractor</div>
@@ -334,7 +326,7 @@ def footer(base: str = "") -> str:
         Texas-based commercial &amp; industrial MEP contractor — self-perform HVAC, refrigeration and electrical; plumbing through licensed TSBPE partner under unified Oak Shield project management.
       </p>
       <div class="mt-6 text-xs text-white/50 space-y-1 font-mono">
-        <div>713-815-0552 · info@oakshieldservice.com</div>
+        <div>info@oakshieldservice.com</div>
         <div>1819 First Oaks St #180, Richmond, TX 77406 · Texas Statewide</div>
         <div>TACL # 111021 (Class A) · TECL # TACLA111021C</div>
       </div>
@@ -394,7 +386,6 @@ def schema_local_business() -> str:
   "name": "Oak Shield Service LLC",
   "description": "Texas-based commercial & industrial MEP contractor — HVAC, refrigeration, electrical and plumbing partner delivery for data centers, hospitality, cold storage, and big-box retail.",
   "url": "https://oakshieldservice.com",
-  "telephone": "+1-713-815-0552",
   "email": "info@oakshieldservice.com",
   "foundingDate": "2016",
   "founder": { "@type": "Person", "name": "Xinchao Xi" },
