@@ -75,7 +75,7 @@ def build_services():
          "project_ocm_coldstorage.png", "markets/cold-storage.html"),
 
         ("electrical", "03", "Electrical", "Medium-Voltage · Distribution · Controls",
-         "Power distribution, equipment connections, control wiring and low-voltage systems for data centers, manufacturing and large commercial. We self-perform up to 25kV medium voltage with 15 MV-trained electricians on staff. TECL #TACLA111021C · Designated Master Electrician Xinchao Xi.",
+         "Power distribution, equipment connections, control wiring and low-voltage systems for data centers, manufacturing and large commercial. We self-perform up to 25kV medium voltage with 15 MV-trained electricians on staff. TECL #786342 · Designated Master Electrician Xinchao Xi.",
          [
             "Medium-voltage distribution up to 25kV",
             "UPS install &amp; power feed (Eaton &amp; ABB authorized partner)",
@@ -418,7 +418,7 @@ def build_company():
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-px paper-bg/5 border border-line">
       <div class="ink2-bg p-7"><div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">Texas HVAC</div><div class="text-2xl font-extrabold mb-1">TACL #111021</div><div class="text-xs text-white/55">Class A · Unlimited tonnage</div></div>
-      <div class="ink2-bg p-7"><div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">Texas Electrical</div><div class="text-2xl font-extrabold mb-1">TECL #TACLA111021C</div><div class="text-xs text-white/55">Designated Master: Xinchao Xi</div></div>
+      <div class="ink2-bg p-7"><div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">Texas Electrical</div><div class="text-2xl font-extrabold mb-1">TECL #786342</div><div class="text-xs text-white/55">Designated Master: Xinchao Xi</div></div>
       <div class="ink2-bg p-7"><div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">EPA 608</div><div class="text-2xl font-extrabold mb-1">7 / 15 Universal</div><div class="text-xs text-white/55">Type II High-Pressure Commercial certified techs</div></div>
       <div class="ink2-bg p-7"><div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">Plumbing</div><div class="text-2xl font-extrabold mb-1">TSBPE Partner</div><div class="text-xs text-white/55">Licensed plumbing partner under Oak Shield PM</div></div>
       <div class="ink2-bg p-7"><div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-3">Insurance</div><div class="text-2xl font-extrabold mb-1">GL · WC · Auto</div><div class="text-xs text-white/55">Certificates issued per project requirements</div></div>
@@ -482,9 +482,9 @@ def build_contact():
       </p>
 
       <div class="space-y-5 mb-10">
-        <a href="mailto:info@oakshieldservice.com" class="block ink2-bg border border-line p-5 hover:border-safety transition-colors group">
+        <a href="mailto:benduan@oakshieldservice.com" class="block ink2-bg border border-line p-5 hover:border-safety transition-colors group">
           <div class="text-[10px] uppercase tracking-[0.2em] safety font-bold mb-1">// Estimating Desk</div>
-          <div class="text-xl lg:text-2xl font-extrabold group-hover:safety transition-colors break-all">info@oakshieldservice.com</div>
+          <div class="text-xl lg:text-2xl font-extrabold group-hover:safety transition-colors break-all">benduan@oakshieldservice.com</div>
           <div class="text-xs text-white/55 mt-1">Weekdays 7 AM – 6 PM CT · Attach drawings, specs, RFI logs as PDF</div>
         </a>
       </div>
@@ -496,12 +496,18 @@ def build_contact():
       </div>
     </div>
 
-    <!-- Right: RFP form -->
+    <!-- Right: RFP form (powered by FormSubmit.co — sends submissions to benduan@oakshieldservice.com) -->
     <div class="lg:col-span-7">
-      <form id="rfp-form" class="ink2-bg border border-line p-8 lg:p-10 space-y-6" method="post" action="#">
+      <form id="rfp-form" class="ink2-bg border border-line p-8 lg:p-10 space-y-6" method="POST" action="https://formsubmit.co/benduan@oakshieldservice.com" enctype="multipart/form-data">
+        <!-- FormSubmit configuration -->
+        <input type="hidden" name="_subject" value="Oak Shield · New Project Inquiry">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://oakshieldservice.com/contact/?submitted=1">
+        <input type="hidden" name="_honey" value="">
         <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-2">// RFP Form</div>
         <h2 class="display text-2xl font-extrabold mb-1">Project Inquiry &amp; Capability Request</h2>
-        <p class="text-sm text-white/55 mb-6">Required fields marked *. We treat all submissions as confidential.</p>
+        <p class="text-sm text-white/55 mb-6">Required fields marked *. We treat all submissions as confidential. Submissions are emailed directly to our estimating desk.</p>
 
         <div class="grid sm:grid-cols-2 gap-5">
           <div>
@@ -617,10 +623,15 @@ def build_contact():
       <div class="ink-bg text-white p-7 lg:p-8">
         <div class="text-xs uppercase tracking-[0.2em] safety font-bold mb-4">// Quick Request</div>
         <p class="text-sm text-white/75 mb-5">Email the Capability PDF to a single recipient — no full RFP needed.</p>
-        <form class="space-y-4">
-          <input class="field-input" type="text" name="cap_company" placeholder="Company *" required>
-          <input class="field-input" type="email" name="cap_email" placeholder="Email *" required>
-          <select class="field-select" name="cap_role">
+        <form class="space-y-4" method="POST" action="https://formsubmit.co/benduan@oakshieldservice.com">
+          <input type="hidden" name="_subject" value="Oak Shield · Capability Statement Request">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://oakshieldservice.com/contact/?capreq=1">
+          <input type="hidden" name="_honey" value="">
+          <input class="field-input" type="text" name="Company" placeholder="Company *" required>
+          <input class="field-input" type="email" name="Email" placeholder="Email *" required>
+          <select class="field-select" name="Role">
             <option value="">Your role…</option>
             <option>General Contractor</option>
             <option>Owner / Developer</option>
@@ -844,7 +855,7 @@ def build_data_centers():
             ("Can you self-perform both mechanical and electrical at the same DC site?",
              "Yes — that's a core reason GCs and owners hire us. Combining mechanical (CRAH, AHU, chiller integration) and electrical (PDU, switchgear, UPS power feed, generator interconnect) under one trade partner collapses the multi-trade RFI loop and shortens commissioning. With 15 MV-trained electricians and EPA 608 certified refrigeration technicians on staff, we run both scopes in-house."),
             ("Are you prequalified on major data center GCs and platforms?",
-             "We carry the licenses (TACL #111021 Class A · TECL #TACLA111021C), insurance, EMR 0.85 safety record, and 100% OSHA-10 / OSHA-30 coverage GCs require. Complete pre-qualification packages — including license certificates, COIs, EMR letter, bonding capacity and project references — provided on request."),
+             "We carry the licenses (TACL #111021 Class A · TECL #786342), insurance, EMR 0.85 safety record, and 100% OSHA-10 / OSHA-30 coverage GCs require. Complete pre-qualification packages — including license certificates, COIs, EMR letter, bonding capacity and project references — provided on request."),
             ("Where in Texas can you support data center builds?",
              "Statewide. We staff active crews across Houston, Dallas / Fort Worth, Austin, San Antonio, and the Abilene / DFW build corridors where AI hyperscale activity is concentrated."),
         ],

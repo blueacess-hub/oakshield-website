@@ -74,12 +74,22 @@ SHARED_CSS = """
   .nav-dropdown:hover .nav-caret { transform: rotate(180deg); }
   /* Mobile nav drawer */
   .mobile-nav-drawer {
-    max-height: 0; overflow: hidden;
+    max-height: 0 !important;
+    overflow: hidden !important;
+    visibility: hidden;
     background: var(--ink);
     border-top: 1px solid var(--line);
-    transition: max-height 280ms cubic-bezier(0.4,0.0,0.2,1);
+    transition: max-height 280ms cubic-bezier(0.4,0.0,0.2,1), visibility 0ms 280ms;
   }
-  .mobile-nav-drawer.mobile-nav-open { max-height: 80vh; overflow-y: auto; }
+  .mobile-nav-drawer.mobile-nav-open {
+    max-height: 80vh !important;
+    overflow-y: auto !important;
+    visibility: visible;
+    transition: max-height 280ms cubic-bezier(0.4,0.0,0.2,1), visibility 0ms;
+  }
+  .mobile-nav-drawer:not(.mobile-nav-open) > * { display: none !important; }
+  .mobile-nav-drawer.mobile-nav-open > * { display: block; }
+  .mobile-nav-drawer.mobile-nav-open > a.btn-primary { display: inline-flex; }
   .mobile-nav-link {
     display: block; padding: 14px 24px; font-size: 15px; font-weight: 500;
     color: rgba(255,255,255,0.92); border-bottom: 1px solid var(--line);
@@ -137,6 +147,54 @@ SHARED_CSS = """
     outline: none; border-color: var(--safety); background: rgba(255,255,255,0.06);
   }
   .field-textarea { resize: vertical; min-height: 120px; }
+
+  /* ============================================================
+     Heading & spacing protection — overrides WP block theme defaults
+     (WP applies h1/h2 { line-height: 1.125 } which crowds our underlines)
+     ============================================================ */
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2 !important;
+    font-weight: inherit;
+  }
+  .display, h1.display, h2.display, h3.display {
+    line-height: 1.1 !important;
+    font-family: 'Manrope', sans-serif !important;
+    letter-spacing: -0.02em !important;
+  }
+  /* Underline accent: enough offset so multi-line headings don't crowd */
+  .underline-safety {
+    text-decoration: underline;
+    text-decoration-color: var(--safety);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
+    text-decoration-skip-ink: none;
+  }
+  /* Ensure each <section> keeps its declared py-* padding even if WP CSS strips it */
+  section { display: block; clear: both; }
+  /* Prevent section-num watermark from absolute-overflowing across sections */
+  section { position: relative; }
+
+  /* ============================================================
+     NATIVE FALLBACK for Tailwind responsive utilities
+     Ensures correct layout even if Tailwind CDN fails to load on mobile
+     ============================================================ */
+  .hidden { display: none !important; }
+  .lg\\:hidden { display: block; }
+  .lg\\:flex { display: none; }
+  .lg\\:inline-flex { display: none; }
+  .hidden.md\\:inline { display: none !important; }
+  @media (min-width: 768px) {
+    .md\\:inline { display: inline !important; }
+    .md\\:flex { display: flex; }
+    .hidden.md\\:inline { display: inline !important; }
+  }
+  @media (min-width: 1024px) {
+    .lg\\:flex { display: flex !important; }
+    .lg\\:inline-flex { display: inline-flex !important; }
+    .lg\\:hidden { display: none !important; }
+    .lg\\:sticky { position: sticky; }
+    .lg\\:top-0 { top: 0; }
+  }
   /* Page-section number watermark */
   .section-num { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 14vw; letter-spacing: -0.04em; line-height: 1; opacity: 0.04; }
 """
@@ -174,15 +232,14 @@ def head(title: str, description: str, canonical: str = "", og_image: str = "../
 def announcement_bar() -> str:
     return """
 <div class="ink-bg text-white text-xs">
-  <div class="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
+  <div class="max-w-7xl mx-auto px-6 py-2 flex items-center justify-center sm:justify-between">
     <div class="flex items-center gap-4 text-white/70">
-      <span class="hidden md:inline">Texas-based · Houston · Dallas · Austin · San Antonio</span>
+      <span>Texas-based · Houston · Dallas · Austin · San Antonio</span>
     </div>
-    <div class="flex items-center gap-5 text-white/80">
-      <a href="mailto:info@oakshieldservice.com" class="flex items-center gap-1.5 hover:text-white">
-        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
-        info@oakshieldservice.com
-      </a>
+    <div class="hidden sm:flex items-center gap-5 text-white/55 text-[11px] font-mono">
+      <span>TACL # 111021</span>
+      <span>·</span>
+      <span>TECL # 786342</span>
     </div>
   </div>
 </div>
@@ -193,7 +250,7 @@ def header(active: str = "", base: str = "") -> str:
     """active: services|markets|projects|company|contact."""
     def cls(name): return "nav-link active" if active == name else "nav-link"
     return f"""
-<header class="sticky top-0 z-50 ink-bg border-b border-line">
+<header class="lg:sticky lg:top-0 z-50 ink-bg border-b border-line">
   <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
     <a href="{base}index.html" class="flex items-center gap-3 text-white">
       <img src="{base}../assets/brand/oak-shield-logo.png" alt="Oak Shield Service logo" width="44" height="44" class="w-11 h-11 shrink-0"/>
@@ -229,6 +286,7 @@ def header(active: str = "", base: str = "") -> str:
   </div>
   <!-- Mobile nav drawer -->
   <div id="mobile-nav" class="lg:hidden mobile-nav-drawer">
+    <a href="{base}contact.html#capability" class="btn-primary mx-5 mt-5 mb-3 justify-center text-xs">Request Capability Statement<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></a>
     <a href="{base}index.html" class="mobile-nav-link">Overview</a>
     <a href="{base}services.html" class="mobile-nav-link">Services</a>
     <details class="mobile-nav-section">
@@ -241,7 +299,6 @@ def header(active: str = "", base: str = "") -> str:
     </details>
     <a href="{base}company.html" class="mobile-nav-link">Company</a>
     <a href="{base}contact.html" class="mobile-nav-link">Contact</a>
-    <a href="{base}contact.html" class="btn-primary mx-6 mt-4 mb-6 justify-center">Request Capability Statement<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></a>
   </div>
 </header>
 """
@@ -303,7 +360,7 @@ def cta_band(base: str = "") -> str:
         <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
       </a>
       <a href="{base}contact.html#capability" class="btn-ghost text-white justify-center"><span>Download Capability Statement (PDF)</span></a>
-      <a href="mailto:info@oakshieldservice.com" class="text-center text-sm text-white/55 mt-2 font-mono hover:text-white">or email info@oakshieldservice.com</a>
+      <a href="mailto:benduan@oakshieldservice.com" class="text-center text-sm text-white/55 mt-2 font-mono hover:text-white">or email benduan@oakshieldservice.com</a>
     </div>
   </div>
 </section>
@@ -326,9 +383,9 @@ def footer(base: str = "") -> str:
         Texas-based commercial &amp; industrial MEP contractor — self-perform HVAC, refrigeration and electrical; plumbing through licensed TSBPE partner under unified Oak Shield project management.
       </p>
       <div class="mt-6 text-xs text-white/50 space-y-1 font-mono">
-        <div>info@oakshieldservice.com</div>
+        <div><a href="mailto:benduan@oakshieldservice.com" class="hover:text-white">benduan@oakshieldservice.com</a></div>
         <div>1819 First Oaks St #180, Richmond, TX 77406 · Texas Statewide</div>
-        <div>TACL # 111021 (Class A) · TECL # TACLA111021C</div>
+        <div>TACL # 111021 (Class A) · TECL # 786342</div>
       </div>
     </div>
     <div class="md:col-span-3">
@@ -386,7 +443,7 @@ def schema_local_business() -> str:
   "name": "Oak Shield Service LLC",
   "description": "Texas-based commercial & industrial MEP contractor — HVAC, refrigeration, electrical and plumbing partner delivery for data centers, hospitality, cold storage, and big-box retail.",
   "url": "https://oakshieldservice.com",
-  "email": "info@oakshieldservice.com",
+  "email": "benduan@oakshieldservice.com",
   "foundingDate": "2016",
   "founder": { "@type": "Person", "name": "Xinchao Xi" },
   "numberOfEmployees": { "@type": "QuantitativeValue", "value": 30 },
@@ -400,7 +457,7 @@ def schema_local_business() -> str:
   },
   "hasCredential": [
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "TACL #111021 (Class A)" },
-    { "@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "TECL #TACLA111021C" }
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "TECL #786342" }
   ],
   "areaServed": [
     { "@type": "State", "name": "Texas" },
