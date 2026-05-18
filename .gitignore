@@ -3,3 +3,7 @@
 __pycache__/
 *_OLD.png
 .claude/
+.wp_credentials.json
+.wp_credentials.*.json
+*.env
+*.env.*
